@@ -1,0 +1,15 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace MathCounting {
+
+    public class btnDelete : BaseBtn {
+        protected override void OnClick() {
+            inputTable.InputField.ClearNumber();
+        }
+
+    }
+
+
+}
