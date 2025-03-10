@@ -7,6 +7,9 @@ using UnityEngine;
 namespace MathCounting {
     public class TimerDurationCtrl : NewMonobehavior {
         [SerializeField] protected TextMeshProUGUI durationUI;
+
+        public TextMeshProUGUI DurationUI => durationUI;
+
         private float elapsedTime = 0f;
         private bool isRunning = false;
 

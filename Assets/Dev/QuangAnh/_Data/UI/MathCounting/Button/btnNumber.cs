@@ -7,7 +7,8 @@ using UnityEngine;
 
 
 namespace MathCounting {
-    public class btnNumber : BaseBtn {
+    public class btnNumber : BtnAbstact {
+
         [SerializeField] protected int numberValue;
         [SerializeField] protected TextMeshProUGUI number;
 

@@ -3,21 +3,19 @@ using UnityEngine.EventSystems;
 using UnityEngine.Playables;
 namespace MathCounting {
 
-    public class CountdownCtrl : NewMonobehavior {
+    public class CountdownCtrl : Singleton<CountdownCtrl> {
 
 
         [SerializeField] protected PlayableDirector readyTimeLine;
         [SerializeField] protected TeacherCharacter teacherCharacter;
-        private bool isGameStarted = false;
 
+        public bool isGameStarted = false;
 
         protected override void LoadComponents() {
             base.LoadComponents();
             this.LoadPlayableDirector();
             this.LoadTeacherCharacter();
-            
         }
-
 
         protected virtual void LoadPlayableDirector() {
             if (readyTimeLine != null) return;
@@ -31,15 +29,11 @@ namespace MathCounting {
             Debug.Log(transform.name + ": Load TeacherCharacter", gameObject);
         }
 
-        void Update() {
-            if (Input.GetMouseButtonDown(0) && !isGameStarted && !EventSystem.current.IsPointerOverGameObject()) {
-                StartGame();
-            }
+        protected override void Start() {
+            StartGame();
         }
 
         void StartGame() {
-            Debug.Log("Start Game");
-            isGameStarted = true;
             readyTimeLine.Play();
         }
 
@@ -47,8 +41,8 @@ namespace MathCounting {
             teacherCharacter.ChangeAnimation(ConstAnimator.GUIDE_TALK);
         }
 
-        public void EnableInput() {
-            
+        public void ToggleStart() {
+            this.isGameStarted = true;
         }
             
     }

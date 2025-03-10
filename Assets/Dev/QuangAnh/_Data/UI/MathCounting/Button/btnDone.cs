@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 namespace MathCounting { 
-    public class btnDone : BaseBtn { 
+    public class btnDone : BtnAbstact { 
 
         [SerializeField] protected List<StudentCharacter> characters;
 

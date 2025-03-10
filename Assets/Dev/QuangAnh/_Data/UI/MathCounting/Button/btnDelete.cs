@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace MathCounting {
 
-    public class btnDelete : BaseBtn {
+    public class btnDelete : BtnAbstact {
         protected override void OnClick() {
             inputTable.InputField.ClearNumber();
         }

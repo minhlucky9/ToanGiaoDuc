@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 namespace MathCounting {
-    public class RandomObj : NewMonobehavior {
+    public class ControlObject : NewMonobehavior {
         [SerializeField] protected List<ImagePrefabObj> imagePrefabObjs;
 
         [SerializeField] protected List<ImagePrefab> imagePrefabs;

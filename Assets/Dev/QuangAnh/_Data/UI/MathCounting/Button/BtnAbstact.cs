@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 namespace MathCounting {
 
-    public abstract class BaseBtn : NewMonobehavior {
+    public abstract class BtnAbstact : NewMonobehavior {
        
 
         [SerializeField] protected Button button;

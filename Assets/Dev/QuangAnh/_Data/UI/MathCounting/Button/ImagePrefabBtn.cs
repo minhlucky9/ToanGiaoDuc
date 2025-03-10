@@ -9,7 +9,7 @@ using UnityEngine.UI;
 
 
 namespace MathCounting {
-    public class ImagePrefab : BaseBtn {
+    public class ImagePrefab : BtnAbstact {
 
         // Need Refactor
         [SerializeField] protected PlayableDirector timeLine;
@@ -77,6 +77,8 @@ namespace MathCounting {
 
 
         protected override void OnClick() {
+
+            if (!CountdownCtrl.Instance.isGameStarted) return;
             if (mathCounting.isAnyActive) return;
 
             mathCounting.SetImagePrefab(this);
