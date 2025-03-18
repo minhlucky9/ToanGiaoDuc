@@ -1,0 +1,16 @@
+B1: tạo game manager
+-kéo script "DragDropManager" vào hierarchy
+-tích "isRandom" trong component "Drag Drop Manager" để tự động sinh số yêu cầu cho dropzone, bỏ tích để điền số thủ công cho các dropzone
+
+B2: tạo canvas
+-kéo prefab "BoardCanvas" vào hierarchy
+-điều chỉnh cỡ của BoardCanvas và box collider tương ứng với diện tích kéo thả 
+
+B3: tạo các dropzone
+-kéo prefab DropZoneDraggablesGroup để tạo một nhóm dropzone + draggable, hoặc kéo riêng lẻ các dropzone và draggables vào canvas
+-(nếu bỏ tích isRandom trong game manager) điền số yêu cầu vào phần Required Count từng component DropZone trong các object Dropzone
+-bỏ tích "isEqual", tích vào loại dạng bài tương ứng (Lớn hơn, nhỏ hơn, bằng) (chỉ có thể tích vào 1 lựa chọn, khi đổi dạng bài phải bỏ tích lựa chọn hiện tại)
+
+B4: điều chỉnh các đối tượng khác
+-thêm tag "BtnComplete" cho nút "Hoàn thành" (hoặc sửa tên tag ở dòng 28 trong script "DragDropManager.cs" thành tên tag hiện tại của button)
+-gọi hàm "StartTimer()" của "DragDropManager" khi bắt đầu tính thời gian làm bài (xóa StartTimer() trong script DragDropManager.cs, hàm Start())
