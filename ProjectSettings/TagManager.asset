@@ -3,14 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Board
-  - Canvas
-  - BoardCanvas
-  - TextTimer
-  - BtnComplete
-  - DropZone
-  - DragDropManager
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -18,8 +11,8 @@ TagManager:
   - 
   - Water
   - UI
-  - Draggables
-  - Dropzones
+  - 
+  - 
   - 
   - 
   - 
@@ -47,4 +40,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: ImagePrefabs
+    uniqueID: 2166093075
     locked: 0
