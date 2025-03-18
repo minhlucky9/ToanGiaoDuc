@@ -128,11 +128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   answerButton: {fileID: 6174442112999560063}
   answerText: {fileID: 7692806075088839691}
-  modelIcon: {fileID: 353721772843377376}
-  allModelSprites:
-  - {fileID: 21300000, guid: 90478f7932367f648a863e8abc35095d, type: 3}
-  - {fileID: 21300000, guid: b66d911a7c78bfa4da69b8305d1be45b, type: 3}
-  - {fileID: 21300000, guid: d70fc5b5f9bb4a94eaae8018d4673bb9, type: 3}
+  rightAnswer: 0
 --- !u!1 &4045690714021396958
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,8 +196,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
