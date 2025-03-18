@@ -7,7 +7,7 @@ using UnityEngine.UI;
 using UnityEngine.Timeline;
 using System.Linq;
 using Unity.VisualScripting;
-using mathCounting;
+
 namespace MathCounting {
     
     [RequireComponent(typeof(Button))]

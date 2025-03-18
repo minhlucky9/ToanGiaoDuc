@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace mathCounting {
+namespace MathCounting {
     public class ZoomPosition : NewMonobehavior {
 
         protected override void Start() {
