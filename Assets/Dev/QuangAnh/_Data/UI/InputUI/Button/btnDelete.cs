@@ -6,7 +6,9 @@ namespace MathCounting {
 
     public class btnDelete : BtnAbstact {
         protected override void OnClick() {
-            MathCounting.Instance.InputTable.InputField.ClearNumber();
+
+            // Clear Value
+            MathCounting.Instance.InputTable.ClearInputValue();
         }
 
     }
