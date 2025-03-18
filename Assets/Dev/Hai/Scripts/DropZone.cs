@@ -83,7 +83,7 @@ namespace DragDrop
         }
 
         // Kiểm tra đúng sai theo yêu cầu đề bài
-        public void CheckCorrectness()
+        public bool CheckCorrectness()
         {
             if (isEqual)
             {
@@ -101,6 +101,8 @@ namespace DragDrop
             manager.UpdateWrongCount(isCorrect);
             // Đổi btn
             confirmed = true;
+
+            return isCorrect;
         }
 
         void RandomRequiredCount()
