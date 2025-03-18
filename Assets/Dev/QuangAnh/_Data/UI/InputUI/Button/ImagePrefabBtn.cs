@@ -117,10 +117,12 @@ namespace MathCounting {
 
                 while (timeLine.time < 0.5f){
 
-                   /* Debug.Log(zoomPositon.transform.position);
-                    Debug.Log(zoomPositon.transform.rotation);*/
-
-                transform.position = Vector3.MoveTowards(transform.position, zoomPos, Time.deltaTime * 5);
+                    /* Debug.Log(zoomPositon.transform.position);
+                     Debug.Log(zoomPositon.transform.rotation);*/
+                    if (zoomPositon.transform.position != zoomPos || zoomPositon.transform.rotation != Quaternion.identity) {
+                        transform.position = Vector3.MoveTowards(transform.position, zoomPositon.transform.position, Time.deltaTime * 5);
+                    } else transform.position = Vector3.MoveTowards(transform.position, zoomPos, Time.deltaTime * 5);
+                    
                     transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.identity, Time.deltaTime * 200);
                     yield return null;
                 }

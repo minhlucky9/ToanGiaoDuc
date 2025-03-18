@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 namespace MathCounting {
     
-    public abstract class InputField : NewMonobehavior {
+    public class InputField : NewMonobehavior {
 
         [SerializeField] protected TextMeshProUGUI textInputField;  
         [SerializeField] protected InputTable inputTable;
@@ -32,7 +32,7 @@ namespace MathCounting {
 
         protected virtual void LoadInputTable() { 
             if (inputTable != null) return;
-            this.inputTable = MathCounting.Instance.InputTable;
+            this.inputTable = GetComponentInParent<InputTable>();
             Debug.Log(transform.name + ": LoadInputTable" + gameObject);
         }
 

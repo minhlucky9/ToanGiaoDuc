@@ -59,8 +59,6 @@ namespace MathCounting {
 
         }
 
-
-
         public void Show() {
             transform.gameObject.SetActive(true);
         }
@@ -74,6 +72,11 @@ namespace MathCounting {
         }
 
         public virtual string AddInputValue( string value ) {
+            
+/*            Debug.Log(transform.name + ": AddInputValue " + gameObject);*/
+
+            if(inputValue.Length >= 2) return inputValue;
+
             inputValue += value;
             return inputValue;
         }

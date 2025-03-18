@@ -96,9 +96,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1453105849397229147}
-  mathCounting: {fileID: 0}
   numberValue: 6
-  number: {fileID: 4404638641956585075}
+  answerTextUI: {fileID: 0}
 --- !u!1 &122113583891199858
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,9 +563,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 143455215886117823}
-  mathCounting: {fileID: 0}
   numberValue: 3
-  number: {fileID: 6050773493001884079}
+  answerTextUI: {fileID: 0}
 --- !u!1 &654838311336972666
 GameObject:
   m_ObjectHideFlags: 0
@@ -1539,9 +1537,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 8916775163360331360}
-  mathCounting: {fileID: 0}
   numberValue: 7
-  number: {fileID: 6048878249881342941}
+  answerTextUI: {fileID: 0}
 --- !u!1 &4272697995060531183
 GameObject:
   m_ObjectHideFlags: 0
@@ -1808,9 +1805,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 388303436818608080}
-  mathCounting: {fileID: 0}
   numberValue: 0
-  number: {fileID: 516497777881674677}
+  answerTextUI: {fileID: 0}
 --- !u!1 &4653425301798653292
 GameObject:
   m_ObjectHideFlags: 0
@@ -2240,9 +2236,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 8115222785436567395}
-  mathCounting: {fileID: 0}
   numberValue: 4
-  number: {fileID: 5834305089305703876}
+  answerTextUI: {fileID: 0}
 --- !u!1 &4986226144887787465
 GameObject:
   m_ObjectHideFlags: 0
@@ -2479,7 +2474,7 @@ GameObject:
   - component: {fileID: 7614440545724904017}
   - component: {fileID: 350637234833784950}
   - component: {fileID: 2719195675805051347}
-  - component: {fileID: 189734049154202254}
+  - component: {fileID: 453712633622702102}
   m_Layer: 0
   m_Name: InputNumber
   m_TagString: Untagged
@@ -2545,7 +2540,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &189734049154202254
+--- !u!114 &453712633622702102
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2558,6 +2553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textInputField: {fileID: 6098724264246149704}
+  inputTable: {fileID: 2809269453632473635}
 --- !u!1 &5705073674288548969
 GameObject:
   m_ObjectHideFlags: 0
@@ -2817,7 +2813,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fab7426d570b984d9b53afa5f57fc54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputField: {fileID: 0}
+  inputValue: 
+  characters:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &5873120375696240837
 GameObject:
   m_ObjectHideFlags: 0
@@ -2950,9 +2949,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 784960491203634226}
-  mathCounting: {fileID: 0}
   numberValue: 9
-  number: {fileID: 3448529611436384817}
+  answerTextUI: {fileID: 0}
 --- !u!1 &6163064951620614268
 GameObject:
   m_ObjectHideFlags: 0
@@ -3049,9 +3047,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 8461347140540705517}
-  mathCounting: {fileID: 0}
   numberValue: 8
-  number: {fileID: 3693150980709394668}
+  answerTextUI: {fileID: 0}
 --- !u!1 &6271999533006128634
 GameObject:
   m_ObjectHideFlags: 0
@@ -3590,9 +3587,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1757135439046454047}
-  mathCounting: {fileID: 0}
   numberValue: 1
-  number: {fileID: 5232408162423439863}
+  answerTextUI: {fileID: 0}
 --- !u!1 &7361063279440352216
 GameObject:
   m_ObjectHideFlags: 0
@@ -3933,7 +3929,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1765263205846494217}
-  mathCounting: {fileID: 0}
 --- !u!1 &8232683660408274118
 GameObject:
   m_ObjectHideFlags: 0
@@ -4030,9 +4025,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 197503827456334386}
-  mathCounting: {fileID: 0}
   numberValue: 5
-  number: {fileID: 5859071753354232392}
+  answerTextUI: {fileID: 0}
 --- !u!1 &8266161747282105104
 GameObject:
   m_ObjectHideFlags: 0
@@ -4129,9 +4123,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 5075977996281565269}
-  mathCounting: {fileID: 0}
   numberValue: 2
-  number: {fileID: 1876330876316055278}
+  answerTextUI: {fileID: 0}
 --- !u!1 &8412354452006604886
 GameObject:
   m_ObjectHideFlags: 0
@@ -4431,8 +4424,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 7610080638543995993}
-  mathCounting: {fileID: 0}
-  characters: []
 --- !u!114 &7610080638543995993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4686,7 +4677,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1313778692731006540}
-  mathCounting: {fileID: 0}
-  characters:
-  - {fileID: 0}
-  - {fileID: 0}
