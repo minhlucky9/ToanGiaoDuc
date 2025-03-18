@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Board
+  - Canvas
+  - BoardCanvas
+  - TextTimer
+  - BtnComplete
+  - DropZone
+  - DragDropManager
   layers:
   - Default
   - TransparentFX
@@ -11,8 +18,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Draggables
+  - Dropzones
   - 
   - 
   - 

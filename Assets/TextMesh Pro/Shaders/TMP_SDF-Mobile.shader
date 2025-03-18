@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // Simplified SDF shader:
+=======
+﻿// Simplified SDF shader:
+>>>>>>> 651a4729d8c00e28547ad95663f8160d8c360c49
 // - No Shading Option (bevel / bump / env map)
 // - No Glow Option
 // - Softness is applied on both side of the outline
@@ -6,6 +10,7 @@
 Shader "TextMeshPro/Mobile/Distance Field" {
 
 Properties {
+<<<<<<< HEAD
 	_FaceColor			("Face Color", Color) = (1,1,1,1)
 	_FaceDilate			("Face Dilate", Range(-1,1)) = 0
 
@@ -14,6 +19,16 @@ Properties {
 	_OutlineSoftness	("Outline Softness", Range(0,1)) = 0
 
 	_UnderlayColor		("Border Color", Color) = (0,0,0,.5)
+=======
+	[HDR]_FaceColor     ("Face Color", Color) = (1,1,1,1)
+	_FaceDilate			("Face Dilate", Range(-1,1)) = 0
+
+	[HDR]_OutlineColor	("Outline Color", Color) = (0,0,0,1)
+	_OutlineWidth		("Outline Thickness", Range(0,1)) = 0
+	_OutlineSoftness	("Outline Softness", Range(0,1)) = 0
+
+	[HDR]_UnderlayColor	("Border Color", Color) = (0,0,0,.5)
+>>>>>>> 651a4729d8c00e28547ad95663f8160d8c360c49
 	_UnderlayOffsetX 	("Border OffsetX", Range(-1,1)) = 0
 	_UnderlayOffsetY 	("Border OffsetY", Range(-1,1)) = 0
 	_UnderlayDilate		("Border Dilate", Range(-1,1)) = 0
@@ -42,18 +57,31 @@ Properties {
 	_ClipRect			("Clip Rect", vector) = (-32767, -32767, 32767, 32767)
 	_MaskSoftnessX		("Mask SoftnessX", float) = 0
 	_MaskSoftnessY		("Mask SoftnessY", float) = 0
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> 651a4729d8c00e28547ad95663f8160d8c360c49
 	_StencilComp		("Stencil Comparison", Float) = 8
 	_Stencil			("Stencil ID", Float) = 0
 	_StencilOp			("Stencil Operation", Float) = 0
 	_StencilWriteMask	("Stencil Write Mask", Float) = 255
 	_StencilReadMask	("Stencil Read Mask", Float) = 255
+<<<<<<< HEAD
 	
+=======
+
+	_CullMode			("Cull Mode", Float) = 0
+>>>>>>> 651a4729d8c00e28547ad95663f8160d8c360c49
 	_ColorMask			("Color Mask", Float) = 15
 }
 
 SubShader {
+<<<<<<< HEAD
 	Tags 
+=======
+	Tags
+>>>>>>> 651a4729d8c00e28547ad95663f8160d8c360c49
 	{
 		"Queue"="Transparent"
 		"IgnoreProjector"="True"
@@ -65,7 +93,11 @@ SubShader {
 	{
 		Ref [_Stencil]
 		Comp [_StencilComp]
+<<<<<<< HEAD
 		Pass [_StencilOp] 
+=======
+		Pass [_StencilOp]
+>>>>>>> 651a4729d8c00e28547ad95663f8160d8c360c49
 		ReadMask [_StencilReadMask]
 		WriteMask [_StencilWriteMask]
 	}
@@ -125,7 +157,11 @@ SubShader {
 			UNITY_SETUP_INSTANCE_ID(input);
 			UNITY_TRANSFER_INSTANCE_ID(input, output);
 			UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(output);
+<<<<<<< HEAD
 			
+=======
+
+>>>>>>> 651a4729d8c00e28547ad95663f8160d8c360c49
 			float bold = step(input.texcoord1.y, 0);
 
 			float4 vert = input.vertex;
@@ -135,7 +171,11 @@ SubShader {
 
 			float2 pixelSize = vPosition.w;
 			pixelSize /= float2(_ScaleX, _ScaleY) * abs(mul((float2x2)UNITY_MATRIX_P, _ScreenParams.xy));
+<<<<<<< HEAD
 			
+=======
+
+>>>>>>> 651a4729d8c00e28547ad95663f8160d8c360c49
 			float scale = rsqrt(dot(pixelSize, pixelSize));
 			scale *= abs(input.texcoord1.y) * _GradientScale * (_Sharpness + 1);
 			if(UNITY_MATRIX_P[3][3] == 0) scale = lerp(abs(scale) * (1 - _PerspectiveFilter), scale, abs(dot(UnityObjectToWorldNormal(input.normal.xyz), normalize(WorldSpaceViewDir(vert)))));
@@ -195,7 +235,11 @@ SubShader {
 		fixed4 PixShader(pixel_t input) : SV_Target
 		{
 			UNITY_SETUP_INSTANCE_ID(input);
+<<<<<<< HEAD
 			
+=======
+
+>>>>>>> 651a4729d8c00e28547ad95663f8160d8c360c49
 			half d = tex2D(_MainTex, input.texcoord0.xy).a * input.param.x;
 			half4 c = input.faceColor * saturate(d - input.param.w);
 
