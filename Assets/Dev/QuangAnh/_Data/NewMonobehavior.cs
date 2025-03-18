@@ -26,5 +26,8 @@ public class NewMonobehavior : MonoBehaviour
         //Override
 
     }
+    protected virtual void OnValidate() {
+       //Override
+    }
 
 }

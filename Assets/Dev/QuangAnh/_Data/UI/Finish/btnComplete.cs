@@ -13,9 +13,9 @@ namespace MathCounting {
         }
 
         protected virtual void LoadFinishUI() {
-            if (this.finishUI != null) return;
-            this.finishUI = transform.parent.GetComponentInChildren<FinishUI>();
-            Debug.Log(transform.name + ": LoadFinishUI", gameObject);
+            if (this.finishUI != null && finishUI != default) return;
+            this.finishUI = FindAnyObjectByType<FinishUI>();
+            Debug.Log(transform.name + ": LoadFinishUI ", gameObject);
         }
 
         protected override void OnClick() {

@@ -15,7 +15,11 @@ namespace MathCounting {
             base.LoadComponents();
             this.LoadConfirmUI();
             this.LoadResultLogUI();
-            this.gameObject.SetActive(false);
+            
+        }
+
+        protected override void Start() {
+            this.transform.gameObject.SetActive(false);
         }
 
         protected virtual void LoadConfirmUI() {

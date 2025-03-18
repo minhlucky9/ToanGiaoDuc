@@ -14,8 +14,9 @@ namespace MathCounting {
         protected override void LoadComponents() {
             base.LoadComponents();
             this.LoadPlayableDirector();
-            this.LoadTeacherCharacter();
+            this.LoadTeacherCharacter();    
         }
+
 
         protected virtual void LoadPlayableDirector() {
             if (readyTimeLine != null) return;
@@ -30,18 +31,22 @@ namespace MathCounting {
         }
 
         protected override void Start() {
+            //Start Game
             StartGame();
         }
 
         void StartGame() {
+            //Run CountDown Timeline
             readyTimeLine.Play();
         }
 
         public void GuideTalk() {
+            //Teacher Talk in TimeLine
             teacherCharacter.ChangeAnimation(ConstAnimator.GUIDE_TALK);
         }
 
         public void ToggleStart() {
+            //Active input game in Timeline
             this.isGameStarted = true;
         }
             
