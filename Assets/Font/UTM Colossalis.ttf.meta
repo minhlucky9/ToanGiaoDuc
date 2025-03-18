@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 2ba6d50691e884c4cb3e0ca9d9c0f6a0
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: UTM Colossalis
+  fontNames:
+  - UTM Colossalis
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 5b42e816f1266e14da11fe670de6fb6f, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
