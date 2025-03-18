@@ -1,0 +1,20 @@
+B1: Thiết lập môi trường: Lớp học, Bảng phấn
+
+B2: Tạo Canvas cho bảng (World Space)
+
+B3: Kéo prefab Lesson (Chalkboard UI) vào Canvas trên
+
+B4: Thiết lập Điều khiển và Hiển thị Mô hình:
+	- Kéo prefab Model Camera vào World, để xa lớp học
+	- Kéo prefab Mô hình vào trong Model Container trong Model Camera
+	- Tìm Model Image trong Lesson (Chalkboard UI) và kéo vào ModelController của Model Camera
+
+B5: Kéo ModelController vào Lesson của Lesson (Chalkboard UI)
+
+B6: Thiết lập ô trả lời (Answer Box)
+	- Kéo các prefab Answer Box vào Canvas của bảng (tùy vào mô hình để xác định số lượng Answer Box hợp lý)
+	- Gán ảnh Sprite mô hình cho Model Icon của Answer Box
+	- Ghi Right Answer trong AnswerBox
+
+B7: Kéo toàn bộ các Answer Box vào Lesson của Lesson (Chalkboard UI)
+B8: Tạo một Button bất kỳ và gán hàm Lesson.EndLesson() vào event OnClick của nút để xem kết quả
