@@ -411,7 +411,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3405040771808281945
 RectTransform:
   m_ObjectHideFlags: 0
@@ -850,10 +850,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d219b5a95685a71428c5406f57add1ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkingNumbers:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  checkingNumbers: []
   MistakeCount: 0
   QuestionCount: 3
 --- !u!1 &3565955938125576375
@@ -1979,6 +1976,11 @@ PrefabInstance:
       objectReference: {fileID: 5732123707573044805}
     - target: {fileID: 8028220313707797217, guid: f03b84083b4178f4bb86ed7f76808c74,
         type: 3}
+      propertyPath: zoomPositon
+      value: 
+      objectReference: {fileID: 1584366505235126616}
+    - target: {fileID: 8028220313707797217, guid: f03b84083b4178f4bb86ed7f76808c74,
+        type: 3}
       propertyPath: CorrectAnswer
       value: 4
       objectReference: {fileID: 0}
@@ -2162,6 +2164,11 @@ PrefabInstance:
       propertyPath: timeLine
       value: 
       objectReference: {fileID: 4541235456011279000}
+    - target: {fileID: 8028220313707797217, guid: f03b84083b4178f4bb86ed7f76808c74,
+        type: 3}
+      propertyPath: zoomPositon
+      value: 
+      objectReference: {fileID: 1584366505235126616}
     - target: {fileID: 8028220313707797217, guid: f03b84083b4178f4bb86ed7f76808c74,
         type: 3}
       propertyPath: CorrectAnswer
@@ -2640,6 +2647,11 @@ PrefabInstance:
       propertyPath: timeLine
       value: 
       objectReference: {fileID: 90641818242348929}
+    - target: {fileID: 8028220313707797217, guid: f03b84083b4178f4bb86ed7f76808c74,
+        type: 3}
+      propertyPath: zoomPositon
+      value: 
+      objectReference: {fileID: 1584366505235126616}
     - target: {fileID: 8028220313707797217, guid: f03b84083b4178f4bb86ed7f76808c74,
         type: 3}
       propertyPath: CorrectAnswer
