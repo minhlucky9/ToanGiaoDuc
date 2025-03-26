@@ -1,91 +1,93 @@
 ﻿using UnityEngine;
 using TMPro;
 
-public class GameManager : MonoBehaviour
+namespace MathConnection
 {
-    public static GameManager Instance;
-    public GameObject scorePanel;
-    public TextMeshProUGUI correctText;
-    public TextMeshProUGUI wrongText;
-    public TextMeshProUGUI mistakeText;
-    public TextMeshProUGUI timeText;
-    public TimerScript timerScript;
-
-    public int mistakeCount = 0;
-
-    private void Awake()
+    public class GameManager : MonoBehaviour
     {
-        if (Instance == null) Instance = this;
-        else Destroy(gameObject);
+        public static GameManager Instance;
+        public GameObject scorePanel;
+        public TextMeshProUGUI correctText;
+        public TextMeshProUGUI wrongText;
+        public TextMeshProUGUI mistakeText;
+        public TextMeshProUGUI timeText;
+        public TimerScript timerScript;
 
-        scorePanel.SetActive(false);
-    }
+        public int mistakeCount = 0;
 
-    public void AddMistake()
-    {
-        mistakeCount++;
-    }
-
-    public void ShowScore()
-    {
-        int correctCount = 0;
-        int wrongCount = 0;
-
-        var draggables = FindObjectsOfType<DraggableObject>();
-
-        foreach (var draggable in draggables)
+        private void Awake()
         {
-            NumberSlot slot = draggable.currentConnectedSlot;
-            bool isCorrectNow = false;
+            if (Instance == null) Instance = this;
+            else Destroy(gameObject);
 
-            if (slot != null)
+            scorePanel.SetActive(false);
+        }
+
+        public void AddMistake()
+        {
+            mistakeCount++;
+        }
+
+        public void ShowScore()
+        {
+            int correctCount = 0;
+            int wrongCount = 0;
+
+            var draggables = FindObjectsOfType<DraggableObject>();
+
+            foreach (var draggable in draggables)
             {
-                isCorrectNow = (draggable.objectCount == slot.numberSlot);
+                NumberSlot slot = draggable.currentConnectedSlot;
+                bool isCorrectNow = false;
+
+                if (slot != null)
+                {
+                    isCorrectNow = (draggable.objectCount == slot.numberSlot);
+                }
+
+                if (isCorrectNow)
+                    correctCount++;
+                else
+                    wrongCount++;
+
+                Debug.Log($"Obj {draggable.name}: {(isCorrectNow ? "ĐÚNG" : "SAI")}, objCount: {draggable.objectCount}, slot: {(slot != null ? slot.numberSlot.ToString() : "None")}");
             }
 
-            if (isCorrectNow)
-                correctCount++;
-            else
-                wrongCount++;
+            timerScript.StopTimer();
 
-            Debug.Log($"Obj {draggable.name}: {(isCorrectNow ? "ĐÚNG" : "SAI")}, objCount: {draggable.objectCount}, slot: {(slot != null ? slot.numberSlot.ToString() : "None")}");
+            Debug.Log($"Tổng ĐÚNG: {correctCount}, SAI: {wrongCount}, Số lần mắc lỗi: {mistakeCount}, Thời gian: {timerScript.GetFormattedTime()} ");
+
+            correctText.text = $" {correctCount}";
+            wrongText.text = $" {wrongCount}";
+            mistakeText.text = $" {mistakeCount}";
+            timeText.text = $" {timerScript.GetFormattedTime()}";
+
+            scorePanel.SetActive(true);
+
+            ClearAllLines();
         }
 
-        timerScript.StopTimer();
-
-        Debug.Log($"Tổng ĐÚNG: {correctCount}, SAI: {wrongCount}, Số lần mắc lỗi: {mistakeCount}, Thời gian: {timerScript.GetFormattedTime()} ");
-
-        correctText.text = $" {correctCount}";
-        wrongText.text = $" {wrongCount}";
-        mistakeText.text = $" {mistakeCount}";
-        timeText.text = $" {timerScript.GetFormattedTime()}";
-
-        scorePanel.SetActive(true);
-
-        ClearAllLines();
-    }
-
-    public void ClearAllLines()
-    {
-        var draggables = FindObjectsOfType<DraggableObject>();
-        foreach (var draggable in draggables)
+        public void ClearAllLines()
         {
-            draggable.ClearLineRenderer();
+            var draggables = FindObjectsOfType<DraggableObject>();
+            foreach (var draggable in draggables)
+            {
+                draggable.ClearLineRenderer();
+            }
         }
-    }
 
-    public void ResetGame()
-    {
-        mistakeCount = 0;
-        var draggables = FindObjectsOfType<DraggableObject>();
-        foreach (var draggable in draggables)
+        public void ResetGame()
         {
-            draggable.ClearLineRenderer();
-            draggable.transform.position = draggable.startPoint.position; 
-            draggable.currentConnectedSlot = null;
-        }
+            mistakeCount = 0;
+            var draggables = FindObjectsOfType<DraggableObject>();
+            foreach (var draggable in draggables)
+            {
+                draggable.ClearLineRenderer();
+                draggable.transform.position = draggable.startPoint.position;
+                draggable.currentConnectedSlot = null;
+            }
 
-        scorePanel.SetActive(false);
-      
+            scorePanel.SetActive(false);
+        }
     }
 }
