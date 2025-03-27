@@ -23,8 +23,12 @@ namespace MathCounting {
 
 
         protected override void OnClick() {
-           
-            if(!isClickable ) return;
+
+            if (!isClickable) {
+                Debug.Log(transform.name + " Not Clickable " + gameObject);
+                return;
+            }
+            
             /*if (MathCtrl.Instance.isAnyActive) return;*/
 
             MathCtrl.Instance.SetActivePrefab(this);

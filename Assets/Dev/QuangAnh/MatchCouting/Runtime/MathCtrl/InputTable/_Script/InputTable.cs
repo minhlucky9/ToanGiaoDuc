@@ -10,11 +10,9 @@ namespace MathCounting {
     public abstract class InputTable : NewMonobehavior {
 
         [SerializeField] protected string inputValue;
+        [SerializeField] protected List<StudentCharacter> characters = new();
         public string InputValue => inputValue;
 
-        protected override void Awake() {
-            base.Awake();
-        }
 
         protected override void Start() {
             this.transform.gameObject.SetActive(false);
@@ -23,6 +21,13 @@ namespace MathCounting {
         protected override void OnValidate() {
             base.OnValidate();
             this.LoadComponents();
+            this.LoadStudents();
+        }
+
+        protected virtual void LoadStudents() {
+            if (this.characters.Count > 0 && !this.characters.Any(c => c == null)) return;
+            this.characters = new List<StudentCharacter>(FindObjectsOfType<StudentCharacter>());
+            Debug.Log(transform.name + ": LoadStudents " + gameObject);
         }
 
         public virtual void ConfirmNumber() {
@@ -34,9 +39,9 @@ namespace MathCounting {
 
             bool isCorrect = MathCtrl.Instance.ActivePrefab.CheckingNumber.DoChecking(input);
 
-           /* if (isCorrect)
+            if (isCorrect)
                 foreach (StudentCharacter character in this.characters) character.ChangeAnimation(ConstAnimator.RIGHT);
-            else foreach (StudentCharacter character in this.characters) character.ChangeAnimation(ConstAnimator.WRONG);*/
+            else foreach (StudentCharacter character in this.characters) character.ChangeAnimation(ConstAnimator.WRONG);
 
 
             MathCtrl.Instance.ActivePrefab.EnterNumber(input);
