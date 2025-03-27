@@ -1,0 +1,1066 @@
+fileFormatVersion: 2
+guid: c1bc5a030d8684d4cbf8582e9a175ea9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7523618940638122586
+    second: fish_sheet5_0
+  - first:
+      213: 2703028871864873583
+    second: fish_sheet5_1
+  - first:
+      213: -2432775339084958882
+    second: fish_sheet5_2
+  - first:
+      213: -604859196388643432
+    second: fish_sheet5_3
+  - first:
+      213: -4761158393668437438
+    second: fish_sheet5_4
+  - first:
+      213: -2574995643269257603
+    second: fish_sheet5_5
+  - first:
+      213: -2505813777131679668
+    second: fish_sheet5_6
+  - first:
+      213: 4563711591982375452
+    second: fish_sheet5_7
+  - first:
+      213: 5575130372228768878
+    second: fish_sheet5_8
+  - first:
+      213: 3595194089205364392
+    second: fish_sheet5_9
+  - first:
+      213: -3683146227586616940
+    second: fish_sheet5_10
+  - first:
+      213: -4871315554221120673
+    second: fish_sheet5_11
+  - first:
+      213: -8059322869588522717
+    second: fish_sheet5_12
+  - first:
+      213: -2136813598766186533
+    second: fish_sheet5_13
+  - first:
+      213: -7635560029912738042
+    second: fish_sheet5_14
+  - first:
+      213: -4136929858013924820
+    second: fish_sheet5_15
+  - first:
+      213: -4207515757720433898
+    second: fish_sheet5_16
+  - first:
+      213: -7930701397582787711
+    second: fish_sheet5_17
+  - first:
+      213: 740319545100029013
+    second: fish_sheet5_18
+  - first:
+      213: -6435025932426941638
+    second: fish_sheet5_19
+  - first:
+      213: -6620374291546096507
+    second: fish_sheet5_20
+  - first:
+      213: 4098347433276330273
+    second: fish_sheet5_21
+  - first:
+      213: 8091102056197759334
+    second: fish_sheet5_22
+  - first:
+      213: 4582958720027865743
+    second: fish_sheet5_23
+  - first:
+      213: 4630306187144200720
+    second: fish_sheet5_24
+  - first:
+      213: -3307781146556012295
+    second: fish_sheet5_25
+  - first:
+      213: -2002130090373755561
+    second: fish_sheet5_26
+  - first:
+      213: 3166355786875020337
+    second: fish_sheet5_27
+  - first:
+      213: -2817539679462758013
+    second: fish_sheet5_28
+  - first:
+      213: -2494450497684032477
+    second: fish_sheet5_29
+  - first:
+      213: -2471041143446466072
+    second: fish_sheet5_30
+  - first:
+      213: 7114671366676850770
+    second: fish_sheet5_31
+  - first:
+      213: 2525930514052362098
+    second: fish_sheet5_32
+  - first:
+      213: 4083106956138469056
+    second: fish_sheet5_33
+  - first:
+      213: 8531807341768847035
+    second: fish_sheet5_34
+  - first:
+      213: 8297407590470150076
+    second: fish_sheet5_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fish_sheet5_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 490
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2be707c41f1e89b45adf10db3c901f04
+      internalID: -7523618940638122586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_1
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 490
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e3415ae9097527488cda1b1ae1f9888
+      internalID: 2703028871864873583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_2
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 490
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9835e45bc047c694aab1e5d337f95a76
+      internalID: -2432775339084958882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_3
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 490
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 356af615d23985946948e9f1f7242b43
+      internalID: -604859196388643432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_4
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 490
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42cc1362293d1ae49a50c973ab422624
+      internalID: -4761158393668437438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_5
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 490
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d44f0af7f4a6a489ac87fed02e2ea7
+      internalID: -2574995643269257603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 392
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e28c90def1ab5c54a8628f95077f2cde
+      internalID: -2505813777131679668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_7
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 392
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9db905f5ab1debc42b40b7fc8edf953b
+      internalID: 4563711591982375452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_8
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 392
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddf90be0021e13640905132fa1162208
+      internalID: 5575130372228768878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_9
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 392
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7695a49d9cab2f4dbbcc971fe102858
+      internalID: 3595194089205364392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_10
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 392
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f67159e50b092f641b133fc616f5a92b
+      internalID: -3683146227586616940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_11
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 392
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dea8b9942a404154cabe9358d3499e39
+      internalID: -4871315554221120673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 294
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c57053eaaf32074b9b9007adeffe52b
+      internalID: -8059322869588522717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_13
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 294
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31958cc77e7924c449f49192f3c32e98
+      internalID: -2136813598766186533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_14
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 294
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4316ccb0cfc63bf43b3b95cbc23e3b7a
+      internalID: -7635560029912738042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_15
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 294
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a92cb5fb7bc10444b9dc10b68dd54e8c
+      internalID: -4136929858013924820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_16
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 294
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfec8e6fc40f42f4fa99a61a227a313a
+      internalID: -4207515757720433898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_17
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 294
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71488d706c53c014a97b3b9db98e7834
+      internalID: -7930701397582787711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 196
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67dd0b389f291e54cbc3495f22ede101
+      internalID: 740319545100029013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_19
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 196
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e365180263ad8964ba86888d27fde625
+      internalID: -6435025932426941638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_20
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 196
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb4abbb7b428f8945a432a6325632c9e
+      internalID: -6620374291546096507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_21
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 196
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8618ea199d59692439d1cd2ea75294cd
+      internalID: 4098347433276330273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_22
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 196
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb6e04bb87c6184aab9f1ad69ac61f3
+      internalID: 8091102056197759334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_23
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 196
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a43039d86230a1449e8706e8b71e8a1
+      internalID: 4582958720027865743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 98
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9dad263cc1cc3e4baafb08be63ef6ff
+      internalID: 4630306187144200720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_25
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 98
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 359da84915dbd1f41bce4433591b3df2
+      internalID: -3307781146556012295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_26
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 98
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3832c45161180a147a664e16c991f8f1
+      internalID: -2002130090373755561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_27
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 98
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acac77d9552b1ac439395c0bb8c98b1b
+      internalID: 3166355786875020337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_28
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 98
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99616de4026a28645b4317ef62fc8360
+      internalID: -2817539679462758013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_29
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 98
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d16434bef137ad44ea9d1eb70cfe7cf1
+      internalID: -2494450497684032477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f2feffc235685e43bba54b08f3c8bf0
+      internalID: -2471041143446466072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_31
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 0
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d356cc3f89dcca40873e98289da07d7
+      internalID: 7114671366676850770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_32
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 0
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69deb06c7c31904499790e2fc4e6384f
+      internalID: 2525930514052362098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_33
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 0
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 557f2825eae6ee34c8863d34adcd4ab3
+      internalID: 4083106956138469056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_34
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 0
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1849384a87376db4fb2cf93b4ed81dde
+      internalID: 8531807341768847035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_sheet5_35
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 0
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c39753b4342edfd4dae0c22aeb291c09
+      internalID: 8297407590470150076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 7f66f0341ffe13c4f86055655c862ef8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      fish_sheet5_0: -7523618940638122586
+      fish_sheet5_1: 2703028871864873583
+      fish_sheet5_10: -3683146227586616940
+      fish_sheet5_11: -4871315554221120673
+      fish_sheet5_12: -8059322869588522717
+      fish_sheet5_13: -2136813598766186533
+      fish_sheet5_14: -7635560029912738042
+      fish_sheet5_15: -4136929858013924820
+      fish_sheet5_16: -4207515757720433898
+      fish_sheet5_17: -7930701397582787711
+      fish_sheet5_18: 740319545100029013
+      fish_sheet5_19: -6435025932426941638
+      fish_sheet5_2: -2432775339084958882
+      fish_sheet5_20: -6620374291546096507
+      fish_sheet5_21: 4098347433276330273
+      fish_sheet5_22: 8091102056197759334
+      fish_sheet5_23: 4582958720027865743
+      fish_sheet5_24: 4630306187144200720
+      fish_sheet5_25: -3307781146556012295
+      fish_sheet5_26: -2002130090373755561
+      fish_sheet5_27: 3166355786875020337
+      fish_sheet5_28: -2817539679462758013
+      fish_sheet5_29: -2494450497684032477
+      fish_sheet5_3: -604859196388643432
+      fish_sheet5_30: -2471041143446466072
+      fish_sheet5_31: 7114671366676850770
+      fish_sheet5_32: 2525930514052362098
+      fish_sheet5_33: 4083106956138469056
+      fish_sheet5_34: 8531807341768847035
+      fish_sheet5_35: 8297407590470150076
+      fish_sheet5_4: -4761158393668437438
+      fish_sheet5_5: -2574995643269257603
+      fish_sheet5_6: -2505813777131679668
+      fish_sheet5_7: 4563711591982375452
+      fish_sheet5_8: 5575130372228768878
+      fish_sheet5_9: 3595194089205364392
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

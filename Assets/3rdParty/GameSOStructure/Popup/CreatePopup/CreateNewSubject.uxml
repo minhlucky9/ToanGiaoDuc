@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:VisualElement style="flex-grow: 1; font-size: 13px; padding-left: 10px; padding-top: 10px; height: auto; flex-wrap: nowrap; max-height: none; background-image: none;">
+        <ui:Label tabindex="-1" text="Subject Information" parse-escape-sequences="true" display-tooltip-when-elided="true" name="label" style="-unity-font-style: bold; margin-top: 5px; margin-bottom: 5px; font-size: 18px;" />
+        <ui:TextField picking-mode="Ignore" label="Subject Id" name="id_input" style="padding-right: 5px; margin-top: 5px; margin-bottom: 5px; width: 70%;" />
+        <ui:TextField picking-mode="Ignore" label="Subject Name" name="name_input" style="padding-right: 5px; margin-top: 5px; margin-bottom: 5px; width: 70%;" />
+        <uie:ObjectField label="Subject Image" type="UnityEngine.Sprite, UnityEngine.CoreModule" name="image_input" style="padding-right: 5px; margin-bottom: 5px; margin-top: 5px; width: 70%;" />
+        <ui:VisualElement name="image_viewer" style="flex-grow: 1; max-height: none; max-width: none; min-width: auto; min-height: auto; align-items: auto; background-image: url(&quot;project://database/Assets/Assets/SourceImage/Cac%20so%20012345/KHAM%20PHA/area_border.png?fileID=2800000&amp;guid=bc641328f650e31429b9db96d3796e18&amp;type=3#area_border&quot;); -unity-background-scale-mode: scale-to-fit; width: 25%; height: 100px; padding-left: 0; position: absolute; top: 30px; left: 71%; right: 0;" />
+        <ui:Button text="Submit" parse-escape-sequences="true" display-tooltip-when-elided="true" name="submit_btn" style="margin-top: 30px; margin-right: 20px; margin-left: 20px; padding-top: 10px; padding-bottom: 10px;" />
+    </ui:VisualElement>
+</ui:UXML>

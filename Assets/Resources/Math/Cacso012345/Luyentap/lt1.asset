@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d6928144855fbb4bb649eb55f669aac, type: 3}
+  m_Name: lt1
+  m_EditorClassIdentifier: 
+  gameId: lt1
+  topicId: cacso012345
+  gameType: 1
+  difficulty: 1
+  gameSteps:
+  - sceneName: DragDropGame
+    guideDialogs:
+    - audioClip: {fileID: 8300000, guid: bea65bd6848f43c4dbce935214d07f9d, type: 3}
+      dialogText: "Em h\xE3y \u0111i\u1EC1n s\u1ED1 th\xEDch h\u1EE3p v\xE0o \xF4
+        tr\u1ED1ng"
+      npc: 0
+    - audioClip: {fileID: 8300000, guid: bea65bd6848f43c4dbce935214d07f9d, type: 3}
+      dialogText: "Em h\xE3y \u0111i\u1EC1n s\u1ED1 th\xEDch h\u1EE3p v\xE0o \xF4
+        tr\u1ED1ng"
+      npc: 1
+    - audioClip: {fileID: 8300000, guid: bea65bd6848f43c4dbce935214d07f9d, type: 3}
+      dialogText: "Em h\xE3y \u0111i\u1EC1n s\u1ED1 th\xEDch h\u1EE3p v\xE0o \xF4
+        tr\u1ED1ng"
+      npc: 2
