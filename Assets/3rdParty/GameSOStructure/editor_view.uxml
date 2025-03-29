@@ -1,0 +1,27 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/3rdParty/GameSOStructure/editor_view.uss?fileID=7433441132597879392&amp;guid=9add95cdc2cf4294fb4c663907ad9c32&amp;type=3#editor_view" />
+    <ui:VisualElement style="flex-grow: 1; font-size: 13px; padding-left: 10px; padding-top: 10px; height: auto; flex-wrap: nowrap; max-height: none; background-image: none;">
+        <ui:Label tabindex="-1" text="Subject Information" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-font-style: bold; margin-top: 5px; margin-bottom: 5px; font-size: 18px;" />
+        <ui:DropdownField label="Select a subject" name="subject_dropdown" style="margin-top: 5px; margin-bottom: 5px; padding-right: 5px; width: 70%; flex-direction: row;" />
+        <ui:Button text="Create subject" parse-escape-sequences="true" display-tooltip-when-elided="true" name="create_subject_btn" style="width: 25%; align-items: flex-end; justify-content: flex-start; position: absolute; top: 45px; left: auto; right: 10px;" />
+        <ui:TextField picking-mode="Ignore" label="Subject Name" name="subject_name" style="padding-right: 5px; margin-top: 5px; margin-bottom: 5px; width: 70%;" />
+        <uie:ObjectField label="Subject Image" type="UnityEngine.Sprite, UnityEngine.CoreModule" name="subject_image" style="padding-right: 5px; margin-bottom: 5px; margin-top: 5px; width: 70%;" />
+        <ui:VisualElement name="subject_image_viewer" style="flex-grow: 1; max-height: none; max-width: none; min-width: auto; min-height: auto; align-items: auto; background-image: url(&quot;project://database/Assets/Assets/SourceImage/Cac%20so%20012345/KHAM%20PHA/area_border.png?fileID=2800000&amp;guid=bc641328f650e31429b9db96d3796e18&amp;type=3#area_border&quot;); -unity-background-scale-mode: scale-to-fit; width: 25%; height: 50px; padding-left: 0; position: absolute; top: 105px; left: auto; right: 10px;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="topic_group" style="flex-grow: 1; font-size: 13px; padding-left: 10px; padding-top: 10px; top: auto;">
+        <ui:Label tabindex="-1" text="Topic Information" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-font-style: bold; margin-top: 5px; margin-bottom: 5px; font-size: 18px;" />
+        <ui:DropdownField label="Select a topic" name="topic_dropdown" style="margin-top: 5px; margin-bottom: 5px; padding-right: 5px; width: 70%; flex-direction: row;" />
+        <ui:Button text="Create topic" parse-escape-sequences="true" display-tooltip-when-elided="true" name="create_topic_btn" style="width: 25%; align-items: flex-end; justify-content: flex-start; position: absolute; top: 45px; left: auto; right: 10px;" />
+        <ui:TextField picking-mode="Ignore" label="Topic Name" name="topic_name" style="padding-right: 5px; margin-top: 5px; margin-bottom: 5px; width: 70%;" />
+        <uie:ObjectField label="Topic Image" type="UnityEngine.Sprite, UnityEngine.CoreModule" name="topic_image" style="padding-right: 5px; margin-bottom: 5px; margin-top: 5px; width: 70%;" />
+        <ui:VisualElement name="topic_image_viewer" style="flex-grow: 1; max-height: none; max-width: none; min-width: auto; min-height: auto; align-items: auto; background-image: url(&quot;project://database/Assets/Assets/SourceImage/Cac%20so%20012345/KHAM%20PHA/area_border.png?fileID=2800000&amp;guid=bc641328f650e31429b9db96d3796e18&amp;type=3#area_border&quot;); -unity-background-scale-mode: scale-to-fit; width: 25%; height: 50px; padding-left: 0; position: absolute; top: 105px; left: auto; right: 10px;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="game_group" style="flex-grow: 1; font-size: 13px; padding-left: 10px; padding-top: 10px; top: auto; position: relative;">
+        <ui:Label tabindex="-1" text="Game Information" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-font-style: bold; margin-top: 5px; margin-bottom: 5px; font-size: 18px;" />
+        <ui:DropdownField label="Select a game" name="game_dropdown" style="margin-top: 5px; margin-bottom: 5px; padding-right: 5px; width: 70%; flex-direction: row;" />
+        <ui:TextField picking-mode="Ignore" label="Game Id" name="game_id_input" style="width: 70%;" />
+        <ui:Button text="View inspector" parse-escape-sequences="true" display-tooltip-when-elided="true" name="view_inspector_btn" style="width: 25%; align-items: flex-end; justify-content: flex-start; position: absolute; top: 45px; left: auto; right: 10px;" />
+        <ui:Button text="Create game" parse-escape-sequences="true" display-tooltip-when-elided="true" name="create_game_btn" style="width: 25%; align-items: flex-end; justify-content: flex-start; position: absolute; top: 70px; left: auto; right: 10px;" />
+        <ui:DropdownField label="Select a mode" name="mode_dropdown" style="margin-top: 5px; margin-bottom: 5px; padding-right: 5px; width: 70%; flex-direction: row;" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,18 @@
+Bước 1: Thiết lập môi trường không gian lớp học, không gian xung quanh
+
+Bước 2: Kéo prefab vào và thiết lập background cùng các obj và slot
+
+Bước 3: Trong Inspector của các obj, điền các trường như  
+ - Object Count: Đây là số lượng đối tượng trong ảnh
+ - Zoom Scale: Tỉ lệ phóng to khi đối tượng đang được kéo.
+ - Start Point: Điểm bắt đầu kéo
+
+Bước 4: Trong Inspector của các slot, điền các trường như
+ - Number ID: Gán số cho ô số này (ví dụ: 1, 2, 3).
+ - TextMeshPro: Kéo đối tượng TextMeshPro từ scene vào trường này để hiển thị số trong ô.
+
+Bước 5: Kéo countdown từ prefab vào
+
+Bước 6: Kéo panel ribbon và button hoàn thành từ prefab vào 
+
+

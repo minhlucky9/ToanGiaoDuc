@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 402c3d84c4ebce641905a3ba1fe7e73f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - scrollView: {instanceID: 0}
+  - btnContainer: {instanceID: 0}
+  - btnPrefab: {fileID: 7818094479677662583, guid: 970d4327a93cf7249be5af755491de15,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

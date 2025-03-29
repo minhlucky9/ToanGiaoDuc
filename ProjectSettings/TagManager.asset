@@ -4,13 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Board
-  - Canvas
+  - DropZone
   - BoardCanvas
   - TextTimer
-  - BtnComplete
-  - DropZone
   - DragDropManager
+  - BtnComplete
   layers:
   - Default
   - TransparentFX
