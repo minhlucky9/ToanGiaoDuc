@@ -2214,7 +2214,7 @@ GameObject:
   - component: {fileID: 179144526562207861}
   - component: {fileID: 4817369334186132800}
   m_Layer: 5
-  m_Name: Lesson (Chalkboard UI)
+  m_Name: Lesson (Block Number)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

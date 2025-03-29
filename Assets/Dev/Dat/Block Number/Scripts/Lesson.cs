@@ -7,7 +7,7 @@ namespace BlockNumber
     {
         [SerializeField] InputNumber inputNumber;
         [SerializeField] ModelController modelController;
-        [SerializeField] List<AnswerBox> answerBoxList;
+        private List<AnswerBox> answerBoxList;
 
         int mistakeCount;
         bool isLessonPaused;
@@ -15,6 +15,8 @@ namespace BlockNumber
 
         void Start()
         {
+            answerBoxList = new List<AnswerBox>(FindObjectsOfType<AnswerBox>());
+
             foreach (AnswerBox box in answerBoxList)
             {
                 box.SetButtonAction(() => {
@@ -42,7 +44,7 @@ namespace BlockNumber
             return res;
         }
 
-        public void CheckAnswerResult(bool check) { if(!check) mistakeCount++; }
+        public void CheckAnswerResult(bool check) { if (!check) mistakeCount++; }
 
         public void EndLesson()
         {
@@ -59,7 +61,5 @@ namespace BlockNumber
                 $"\nMistake Count: {mistakeCount}" +
                 $"\nTotal Time: {GetLessonTime()}");
         }
-
     }
-
 }
