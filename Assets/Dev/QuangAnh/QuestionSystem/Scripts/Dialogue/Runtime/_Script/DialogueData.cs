@@ -75,7 +75,7 @@ namespace DialogueCustomSystem {
 
             animator.CrossFade(ConstAnimator.IDLE, 0.2f);
 
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(0.5f);
 
         }
 
