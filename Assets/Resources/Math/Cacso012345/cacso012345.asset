@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22316f7ddc296c5469a2cdbb2b045994, type: 3}
+  m_Name: cacso012345
+  m_EditorClassIdentifier: 
+  topicId: cacso012345
+  subjectId: math
+  topicImage: {fileID: 21300000, guid: 8fb8411b2cb869b478813f628014db4f, type: 3}
+  topicName: "C\xE1c s\u1ED1 0, 1, 2, 3, 4, 5"
