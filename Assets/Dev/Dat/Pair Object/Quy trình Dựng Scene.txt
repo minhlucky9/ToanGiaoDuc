@@ -1,0 +1,18 @@
+B1: Thiết lập môi trường: Lớp học, Bảng phấn
+
+B2: Tạo Canvas cho bảng (World Space)
+
+B3: Kéo prefab Lesson (Pair Object) vào Canvas (World Space)
+
+B4: Dựa vào số lượng của các cặp đối tượng, kéo các prefab sau vào Canvas (World Space):
+	- Draggable Object (Đại diện cho vật thể hoặc hình ảnh cần kéo)
+	- Snap Object bên trong có Snap Point (Khi đưa các Draggable Object 
+		gần Snap Point và thả chuột ra sẽ gắn thành cặp) vào Canvas (World Space). 
+	Có thể chỉnh sửa vị trí Snap Point theo mong muốn
+
+B5: Chỉnh sửa nội dung lựa chọn trong "Chọn câu đúng" (trong Choice Section)
+	tại giai đoạn 2 theo nội dung bài học
+
+B6: Tạo một nút "Chữa bài" và chọn event onClick là hàm CorrectLesson() của Lesson (Pair Object)
+
+B7: Tạo một nút "Hoàn thành" và chọn event onClick là hàm EndLesson() của Lesson (Pair Object)
