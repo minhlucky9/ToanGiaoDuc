@@ -5,26 +5,10 @@ namespace BlockNumber
 {
     public class Lesson : MonoBehaviour
     {
-        [SerializeField] InputNumber inputNumber;
         [SerializeField] ModelController modelController;
-        private List<AnswerBox> answerBoxList;
 
-        int mistakeCount;
         bool isLessonPaused;
         float lessonTimer;
-
-        void Start()
-        {
-            answerBoxList = new List<AnswerBox>(FindObjectsOfType<AnswerBox>());
-
-            foreach (AnswerBox box in answerBoxList)
-            {
-                box.SetButtonAction(() => {
-                    inputNumber.gameObject.SetActive(true);
-                    inputNumber.SetCurrentAnswerBox(box);
-                });
-            }
-        }
 
         void Update()
         {
@@ -44,21 +28,14 @@ namespace BlockNumber
             return res;
         }
 
-        public void CheckAnswerResult(bool check) { if (!check) mistakeCount++; }
-
         public void EndLesson()
         {
             isLessonPaused = true;
 
-            int answerRight = 0;
-            foreach (AnswerBox box in answerBoxList)
-            {
-                if (box.IsAnswerRight()) answerRight++;
-            }
             print($"LESSON RESULT: " +
-                $"\nRight Answer: {answerRight}" +
-                $"\nWrong Answer: {answerBoxList.Count - answerRight}" +
-                $"\nMistake Count: {mistakeCount}" +
+                $"\nRight Answer: {MathCounting.ResultCtrl.Instance.GetCorrectCount()}" +
+                $"\nRight Answer: {MathCounting.ResultCtrl.Instance.GetWrongCount()}" +
+                $"\nMistake Count: {MathCounting.ResultCtrl.Instance.GetMistakeCount()}" +
                 $"\nTotal Time: {GetLessonTime()}");
         }
     }
