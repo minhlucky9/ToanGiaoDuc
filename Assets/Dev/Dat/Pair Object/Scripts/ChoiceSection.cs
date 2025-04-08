@@ -10,15 +10,17 @@ namespace PairObject
         [SerializeField] Lesson lesson;
 
         [SerializeField] Button rightChoiceButton;
-        [SerializeField] Button[] allChoiceButtons;
-        [SerializeField] Sprite greenSprite;
-        [SerializeField] Sprite redSprite;
+        [SerializeField] Sprite rightIcon;
+        [SerializeField] Sprite wrongIcon;
+        [SerializeField] Sprite chosenButtonSprite;
+        [SerializeField] Sprite defaultButtonSprite;
 
-        Color chosenColor = new Color(0.5882f, 0.7843f, 0.6353f);
+        Button[] allChoiceButtons;
         bool isChoiceCorrect;
 
         void Awake()
         {
+            allChoiceButtons = GetComponentsInChildren<Button>(true);
             foreach (Button choiceButton in allChoiceButtons)
             {
                 choiceButton.onClick.AddListener(() => Choose(choiceButton));
@@ -35,14 +37,14 @@ namespace PairObject
                 Image buttonImage = choiceButton.GetComponent<Image>();
                 if (buttonImage != null)
                 {
-                    buttonImage.color = choiceButton == button ? chosenColor : Color.white;
+                    buttonImage.sprite = choiceButton == button ? chosenButtonSprite : defaultButtonSprite;
                 }
 
                 Image childImage = choiceButton.transform.Find("Check").GetComponent<Image>();
                 if (childImage != null)
                 {
                     childImage.enabled = true;
-                    childImage.sprite = choiceButton == rightChoiceButton ? greenSprite : redSprite;
+                    childImage.sprite = choiceButton == rightChoiceButton ? rightIcon : wrongIcon;
                 }
             }
 

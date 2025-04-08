@@ -76,7 +76,7 @@ namespace PairObject
 
             int answerRight = 0;
             int totalQuestion = snapPoints.Count > draggableObjects.Count ?
-                snapPoints.Count : draggableObjects.Count;
+                draggableObjects.Count : snapPoints.Count;
 
             for (int i = 0; i < snapPoints.Count; i++)
             {

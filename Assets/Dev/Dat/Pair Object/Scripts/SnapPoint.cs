@@ -37,9 +37,10 @@ namespace PairObject
                         draggableObject.isTaken = true;
                         currentDraggableObject.transform.position = transform.position;
                     }
-                    else if(currentDraggableObject != draggableObject)
+                    else 
                     {
-                        draggableObject.BackToStartPosition();
+                        if (currentDraggableObject != draggableObject) draggableObject.BackToStartPosition();
+                        else currentDraggableObject.transform.position = transform.position;
                     }
                 }
             }

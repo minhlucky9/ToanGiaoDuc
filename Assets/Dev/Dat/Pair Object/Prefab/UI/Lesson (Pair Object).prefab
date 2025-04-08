@@ -373,12 +373,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lesson: {fileID: 4775370743308633310}
   rightChoiceButton: {fileID: 2169144880111982465}
-  allChoiceButtons:
-  - {fileID: 8333124949561230380}
-  - {fileID: 2169144880111982465}
-  - {fileID: 4823429764110841797}
-  greenSprite: {fileID: 21300000, guid: 6fb4aac38b095fb40b6c5b534176f902, type: 3}
-  redSprite: {fileID: 21300000, guid: 83a886c18d636ab4698b5b27fb7c3d42, type: 3}
+  rightIcon: {fileID: 21300000, guid: 10f803749ec1f4a488ac16f101c632ca, type: 3}
+  wrongIcon: {fileID: 21300000, guid: 2746140d019ba6f499e874da1634ac78, type: 3}
+  chosenButtonSprite: {fileID: 21300000, guid: bc82abf500e05f7499b545c15bb8c00a, type: 3}
+  defaultButtonSprite: {fileID: 21300000, guid: 8a02b024a8e32b14da4e4e1655a0d9f2,
+    type: 3}
 --- !u!1 &8720701106872109819
 GameObject:
   m_ObjectHideFlags: 0
@@ -629,7 +628,7 @@ PrefabInstance:
     - target: {fileID: 8016025840417885673, guid: bd5efcd75edac8040a95a4c84a70908e,
         type: 3}
       propertyPath: m_Name
-      value: Choice (Button) (1)
+      value: Choice (Button)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -662,6 +661,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4094283617627939375}
     m_Modifications:
+    - target: {fileID: 6164310154415664424, guid: bd5efcd75edac8040a95a4c84a70908e,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2746140d019ba6f499e874da1634ac78,
+        type: 3}
     - target: {fileID: 6298268815544347873, guid: bd5efcd75edac8040a95a4c84a70908e,
         type: 3}
       propertyPath: m_Pivot.x
@@ -778,18 +783,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 4852588804344245578}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8333124949561230380 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3527144460849981798, guid: bd5efcd75edac8040a95a4c84a70908e,
-    type: 3}
-  m_PrefabInstance: {fileID: 4852588804344245578}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &8215318763594866339
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -906,7 +899,7 @@ PrefabInstance:
     - target: {fileID: 8016025840417885673, guid: bd5efcd75edac8040a95a4c84a70908e,
         type: 3}
       propertyPath: m_Name
-      value: Choice (Button) (2)
+      value: Choice (Button)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -919,15 +912,3 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 8215318763594866339}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4823429764110841797 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3527144460849981798, guid: bd5efcd75edac8040a95a4c84a70908e,
-    type: 3}
-  m_PrefabInstance: {fileID: 8215318763594866339}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

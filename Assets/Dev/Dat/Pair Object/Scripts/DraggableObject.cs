@@ -12,12 +12,12 @@ namespace PairObject
         Vector2 startPosition;
 
         public bool isTaken { get; set; }
-        public bool isChosen {  get; set; }
+        public bool isChosen { get; set; }
         bool isInteractable = true;
 
         private void Awake()
         {
-            parentRectTransform = transform.root.GetComponent<RectTransform>();
+            parentRectTransform = transform.parent.GetComponent<RectTransform>();
             startPosition = rectTransform.localPosition;
         }
         IEnumerator GoToSnapPoint(Vector2 targetPosition)
@@ -68,7 +68,14 @@ namespace PairObject
             if (isInteractable && isChosen)
             {
                 Vector2 localPoint;
-                RectTransformUtility.ScreenPointToLocalPointInRectangle(parentRectTransform, eventData.position, eventData.pressEventCamera, out localPoint);
+
+                RectTransformUtility.ScreenPointToLocalPointInRectangle(
+                    parentRectTransform,
+                    eventData.position,
+                    eventData.pressEventCamera,
+                    out localPoint
+                );
+
                 rectTransform.localPosition = localPoint;
             }
         }
