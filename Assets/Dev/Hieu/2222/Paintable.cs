@@ -45,12 +45,6 @@ namespace ColorPaint
 
                 if (!isNowCorrect)
                 {
-                    if (!IsWhite(currentColor))
-                    {
-                        Debug.Log("⚠️ Hình đã có màu - cần xóa trước.");
-                        return;
-                    }
-
                     if (wasCorrect || lastColor != newColor)
                     {
                         GameManager.Instance.AddMistake();
