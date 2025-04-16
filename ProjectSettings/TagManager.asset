@@ -9,6 +9,7 @@ TagManager:
   - TextTimer
   - DragDropManager
   - BtnComplete
+  - BaseShape
   layers:
   - Default
   - TransparentFX
