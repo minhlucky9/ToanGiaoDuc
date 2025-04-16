@@ -129,13 +129,13 @@ namespace MathConnection
             }
             currentConnectedSlot = null;
             lineRenderer.positionCount = 0;
-            Debug.Log($"[DraggableObject] {name} đã xóa đường nối.");
+        
         }
 
         public void ClearLineRenderer()
         {
             lineRenderer.positionCount = 0;
-            Debug.Log($"[DraggableObject] {name} xóa đường nối.");
+  
         }
     }
 }

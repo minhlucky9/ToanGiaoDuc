@@ -54,7 +54,7 @@ namespace MathConnection
             mistakeText.text = $" {mistakeCount}";
             timeText.text = $" {timerScript.GetFormattedTime()}";
 
-            Debug.Log($"[GameManager] Kết quả: Đúng: {correctCount} - Sai: {wrongCount} - Lỗi: {mistakeCount}");
+            Debug.Log($"[GameManager] Kết quả: Đúng: {correctCount} - Sai: {wrongCount} - Lỗi: {mistakeCount} - Thời gian: {timerScript.GetFormattedTime()}");
 
             scorePanel.SetActive(true);
             ClearAllLines();
@@ -67,7 +67,7 @@ namespace MathConnection
             {
                 draggable.ClearLineRenderer();
             }
-            Debug.Log("[GameManager] Đã xóa tất cả đường nối.");
+         
         }
 
         public void ResetGame()
