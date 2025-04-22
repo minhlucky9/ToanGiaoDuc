@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <uie:PropertyField binding-path="isCorrect" label="Is Correct" />
+    <uie:PropertyField binding-path="acceptEnum" label="Accept Enum" />
+    <uie:ObjectField label="Sprite" name="imageSprite" type="UnityEngine.Sprite, UnityEngine.CoreModule" binding-path="spriteImage" />
+    <uie:PropertyField binding-path="maxSnapDistance" label="Snap Distance" style="height: 48px;" />
+</ui:UXML>
