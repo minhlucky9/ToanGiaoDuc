@@ -4,11 +4,16 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - DropZone
+  - BaseShape
+  - Undefined
   - BoardCanvas
-  - TextTimer
-  - DragDropManager
   - BtnComplete
+  - Linkable
+  - LinkPairManager
+  - AnswerOption
+  - BtnChangePhase
+  - QuestionPanel
+  - BtnQuestionPanel
   layers:
   - Default
   - TransparentFX
@@ -16,8 +21,8 @@ TagManager:
   - 
   - Water
   - UI
-  - Draggables
-  - Dropzones
+  - Linkables
+  - 
   - 
   - 
   - 
@@ -45,4 +50,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: UI
+    uniqueID: 4023329631
     locked: 0

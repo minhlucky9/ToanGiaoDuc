@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:Label tabindex="-1" text="Result" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+    <ui:IntegerField label="Correct Answers" value="0" readonly="true" binding-path="correctAnswers" />
+    <ui:IntegerField label="Wrong Answers" value="0" readonly="true" binding-path="wrongAnswers" />
+    <ui:IntegerField label="Wrong Attemps" value="0" readonly="true" binding-path="wrongAttemps" />
+    <ui:IntegerField label="Total Questions" value="0" readonly="true" binding-path="totalQuestions" />
+    <ui:Label tabindex="-1" text="Current Types" parse-escape-sequences="true" display-tooltip-when-elided="true" style="top: auto; margin-top: 20px;" />
+    <ui:IntegerField label="Valid Type 1" value="0" readonly="true" binding-path="validType1" />
+    <ui:IntegerField label="Valid Type 2" value="0" readonly="true" binding-path="validType2" />
+    <ui:Label tabindex="-1" text="Object type names" parse-escape-sequences="true" display-tooltip-when-elided="true" style="top: auto; margin-top: 20px;" />
+    <uie:PropertyField binding-path="typeNames" style="height: -47px;" />
+    <ui:Label tabindex="-1" text="Phase properties" parse-escape-sequences="true" display-tooltip-when-elided="true" style="top: auto; margin-top: 20px;" />
+    <ui:IntegerField label="Current phase" value="0" readonly="true" binding-path="currentPhase" />
+    <uie:PropertyField binding-path="phases" label="Individual phase properties" style="height: -47px;" />
+</ui:UXML>

@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <uie:ObjectField label="Sprite DragObj              " binding-path="imageDragObject" name="imageDragObject" />
+    <uie:PropertyField binding-path="m_slotDrop" label="SlotDropObject" name="slotDrop" />
+    <ui:Button text="Restart Slot Drop" parse-escape-sequences="true" display-tooltip-when-elided="true" usage-hints="None" name="Ctrl" />
+    <ui:Label tabindex="-1" text=" Custom Slot Drop" parse-escape-sequences="true" display-tooltip-when-elided="true" name="customSlotDrop" style="align-items: auto; -unity-font-style: bold;" />
+    <uie:ObjectField label="Slot Drop Sprite" name="image" type="UnityEngine.Sprite, UnityEngine.CoreModule" binding-path="m_slotDrop.image" />
+    <ui:FloatField label="Snap DIstance" value="0" name="maxSnapDistance" />
+</ui:UXML>

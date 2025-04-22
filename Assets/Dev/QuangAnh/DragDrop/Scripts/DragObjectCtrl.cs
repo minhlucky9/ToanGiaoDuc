@@ -6,13 +6,22 @@ using UnityEngine;
 
 namespace Dev.QuangAnh.WallDragDrop {
     public class DragObjectCtrl : NewMonobehavior {
+        public List<DragObject> dragObjects = new List<DragObject>();
         public List<SlotDrop> slotDrops = new List<SlotDrop>();
         public List<StudentCharacter> studentCharacterList = new List<StudentCharacter>();
 
         protected override void LoadComponents() {
             base.LoadComponents();
             this.LoadSlotDrops();
+            this.LoadDragObject();
             this.LoadStudentCharacterList();
+        }
+
+
+        protected virtual void LoadDragObject() { 
+            if(dragObjects.Count > 0 && !dragObjects.Any(c => c == null)) return;
+            this.dragObjects = new List<DragObject>(FindObjectsOfType<DragObject>());
+            Debug.Log(transform.name + ": LoadDragObject: ", gameObject);
         }
 
         protected virtual void LoadSlotDrops() { 

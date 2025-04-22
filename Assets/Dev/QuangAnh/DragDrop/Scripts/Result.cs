@@ -7,7 +7,7 @@ using UnityEngine;
 namespace Dev.QuangAnh.WallDragDrop {
     public class ResultLog : Singleton<ResultLog> {
     
-        [SerializeField] protected List<SlotDrop> slotDrops = new();
+        [SerializeField] protected DragObjectCtrl dragDropCtrl;
 
         public int CorrectAnswer;
         public int WrongAnswer;
@@ -21,18 +21,18 @@ namespace Dev.QuangAnh.WallDragDrop {
 
         protected override void LoadComponents() {
             base.LoadComponents();
-            this.LoadSlotDrops();
+            this.LoadDragObjectCtrl();
         }
 
-        protected virtual void LoadSlotDrops() { 
-            if (slotDrops.Count > 0 && !slotDrops.Any(c => c == null)) return;
-            this.slotDrops = new List<SlotDrop>(FindObjectsOfType<SlotDrop>());
-            Debug.Log(transform.name + ": LoadSlotDrops: ", gameObject);
+        protected virtual void LoadDragObjectCtrl() {
+            if (this.dragDropCtrl != null) return;
+            this.dragDropCtrl = GameObject.FindAnyObjectByType<DragObjectCtrl>();
+            Debug.Log(transform.name + ": LoadDragObjectCtrl: ", gameObject);
         }
 
 
         protected virtual void CheckResult() {
-            foreach (var slot in slotDrops) {
+            foreach (var slot in dragDropCtrl.slotDrops) {
 
                 if (slot.isCorrect) CorrectAnswer++;
                 else WrongAnswer++;

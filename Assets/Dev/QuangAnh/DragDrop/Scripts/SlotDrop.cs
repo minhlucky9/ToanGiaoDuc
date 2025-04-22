@@ -1,20 +1,36 @@
 using MathCounting;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace Dev.QuangAnh.WallDragDrop
 {
     [RequireComponent(typeof(BoxCollider2D))]
+
     public class SlotDrop : NewMonobehavior {
-        [SerializeField] protected Image image;
+        public Image image;
         [SerializeField] protected BoxCollider2D boxCollider2D;
+
+        public Sprite spriteImage;
 
         [Header("Checking")]
         public bool isCorrect = false;
-        public DragDropEnum accpectEnum;
         public float maxSnapDistance = 0.3f;
+
+        protected override void OnValidate() {
+            base.OnValidate();
+            if (image == null) return;
+            image.sprite = spriteImage;
+#if UNITY_EDITOR
+            EditorApplication.delayCall += () => {
+                if (image != null)
+                    image.SetNativeSize();
+            };
+#endif
+        }
+
 
         protected override void LoadComponents() {
             base.LoadComponents();
@@ -37,16 +53,20 @@ namespace Dev.QuangAnh.WallDragDrop
 
         public virtual bool Checking(DragObject dragObject) {
 
+
+            if(dragObject == null) return false;
             if (this.isCorrect) return false;
 
             float distance = Vector2.Distance(dragObject.transform.position, this.transform.position);
 
             if (distance <= maxSnapDistance) {
-                if (dragObject.targetEnum == accpectEnum && dragObject.targetEnum != DragDropEnum.none) {
+                if (dragObject.m_slotDrop == this && dragObject.m_slotDrop != null) {
                     /* Debug.Log($"Snapped to slot: {dragObject.transform.name}", this.transform.gameObject);*/
-                    dragObject.transform.position = this.transform.position + new Vector3(0, 0, -0.00001f);
+                    dragObject.transform.position = this.transform.position;
                     dragObject.transform.rotation = this.transform.rotation;
                     dragObject.SetIsFinish(true);
+                    dragObject.boxCollider2D.enabled = false;
+                    this.boxCollider2D.enabled = false;
                     this.isCorrect = true;
 
                     StartCoroutine(dragObject.dragObjectCtrl.Animation(true));

@@ -1,0 +1,28 @@
+B1: tạo canvas
+-kéo prefab "BoardCanvas" vào hierarchy
+-điều chỉnh cỡ của BoardCanvas và box collider tương ứng với diện tích kéo thả 
+
+B2: tạo các LinkableObjects
+-kéo prefab "LinkableObject" vào trong "BoardCanvas"
+-chỉnh source image của object
+-chỉnh cỡ BoxCollider của object
+-điền số vào ô "Type" của "Linkable Object" script (điền số nguyên, mỗi dạng object là 1 type)
+
+B3: tạo bảng câu hỏi
+-kéo prefab "QuestionPanel" trong "Prefabs/MultipleQuestions" vào scene
+-chỉnh tag của question panel thành "QuestionPanel"
+
+B4: tạo game manager
+-tạo empty object
+-đổi tag object manager thành "LinkPairManager"
+-gắn script "LinkPairManager" vào object manager
+-kéo xuống phần "Object type names", điền số vật thể sẽ sử dụng trong bài vào ô "type names", điền tên từng vật thể vào các hàng tương ứng với Linkable objects ở trên
+-kéo xuống phần "Phase properties", nhập số pha sẽ có trong bài vào "Individual phase properties", mỗi pha điền type của 2 vật thể sẽ xét, chọn các câu hỏi sẽ sử dụng trong pha trong mục "Questions"
+
+-gắn script "MultiQuestionsManager" vào object manager
+-kéo prefab "AnswerOptionObject" vào mục "Answer option"
+
+B4: điều chỉnh các đối tượng khác
+-thêm tag "BtnComplete" cho nút "Hoàn thành" (hoặc sửa tên tag ở dòng 28 trong script "DragDropManager.cs" thành tên tag hiện tại của button)
+-thêm function OnClick "DragDropManager.CorrectWork" vào nút chữa bài
+-gọi hàm "StartTimer()" của "DragDropManager" khi bắt đầu tính thời gian làm bài (xóa StartTimer() trong script DragDropManager.cs, hàm Start())

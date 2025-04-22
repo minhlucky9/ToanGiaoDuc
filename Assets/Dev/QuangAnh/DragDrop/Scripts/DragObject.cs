@@ -9,8 +9,6 @@ namespace Dev.QuangAnh.WallDragDrop {
     [ExecuteAlways]
     [RequireComponent(typeof(BoxCollider2D))]
     public class DragObject : NewMonobehavior{
-       
-
         public Canvas canvas;
         public RectTransform reactTransform;
         public BoxCollider2D boxCollider2D;
@@ -23,29 +21,17 @@ namespace Dev.QuangAnh.WallDragDrop {
         private Vector3 orginalPos;
         private bool isFinish = false;
 
-
-        [Header("Target")]
-        public DragDropEnum targetEnum;
-       
+        [Header("Custom Object")]
         public Sprite imageDragObject;
+
+        [Header("Target To-Slot Object")]
+        public SlotDrop m_slotDrop;
+
 
         protected override void Start() {
             base.Start();
             mainCam = Camera.main;
             orginalPos = transform.position;
-        }
-
-        protected override void OnValidate() {
-            base.OnValidate();
-            if(imageComponent == null) return;
-            imageComponent.sprite = imageDragObject;
-#if UNITY_EDITOR
-            EditorApplication.delayCall += () =>
-            {
-                if (imageComponent != null)
-                    imageComponent.SetNativeSize();
-            };
-#endif
         }
 
         protected override void LoadComponents() {
@@ -56,9 +42,7 @@ namespace Dev.QuangAnh.WallDragDrop {
             this.LoadRectTransform();
             this.LoadDragObjectCtrl();
             this.LoadImageCompo();
-
         }
-
 
         protected virtual void LoadImageCompo() {
             if (this.imageComponent != null) return;
@@ -95,7 +79,7 @@ namespace Dev.QuangAnh.WallDragDrop {
 
         void OnMouseDown() {
           /*  Debug.Log($"{name} OnMouseDown", gameObject);*/
-            if(isFinish) return;
+            if (isFinish) return;
             isDragging = true;
             offset = transform.position - GetMouseWorldPosition();
         }
@@ -139,12 +123,8 @@ namespace Dev.QuangAnh.WallDragDrop {
 
         void TrySnap() {
 
-            transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, -0.00001f);
-
-            bool isCorrectSlot = false;
-
             foreach (var slot in dragObjectCtrl.slotDrops) {
-                if (isCorrectSlot = slot.Checking(this)) return;
+                if (slot.Checking(this)) return;
             }
         }
 
@@ -157,6 +137,10 @@ namespace Dev.QuangAnh.WallDragDrop {
 
         public void SetIsFinish( bool isFinish ) { 
             this.isFinish = isFinish;
+        }
+
+        public virtual void RestartSlotDrop() { 
+            this.m_slotDrop = null;
         }
     }
 }
