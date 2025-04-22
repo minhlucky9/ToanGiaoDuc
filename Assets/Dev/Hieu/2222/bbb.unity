@@ -4366,6 +4366,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4286515568691740348, guid: 58b88fda4b8e8554c87eaf91ed49642b,
+        type: 3}
+      propertyPath: m_text
+      value: "S\u1ED1 l\u1EA7n m\u1EAFc l\u1ED7i"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5477558098000572767, guid: 58b88fda4b8e8554c87eaf91ed49642b,
+        type: 3}
+      propertyPath: m_text
+      value: "Th\u1EDDi gian ho\xE0n  th\xE0nh"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5477558098000572767, guid: 58b88fda4b8e8554c87eaf91ed49642b,
+        type: 3}
+      propertyPath: m_enableWordWrapping
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6812960426440401805, guid: 58b88fda4b8e8554c87eaf91ed49642b,
         type: 3}
       propertyPath: m_Name

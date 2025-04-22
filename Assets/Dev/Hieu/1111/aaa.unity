@@ -3480,6 +3480,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 385721228510783953, guid: 0f85f05a80b401042916b54b7d8f90f0,
+        type: 3}
+      propertyPath: m_text
+      value: "Th\u1EDDi gian ho\xE0n th\xE0nh"
+      objectReference: {fileID: 0}
+    - target: {fileID: 385721228510783953, guid: 0f85f05a80b401042916b54b7d8f90f0,
+        type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 385721228510783953, guid: 0f85f05a80b401042916b54b7d8f90f0,
+        type: 3}
+      propertyPath: m_enableWordWrapping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 385721228510783953, guid: 0f85f05a80b401042916b54b7d8f90f0,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1573838531439659532, guid: 0f85f05a80b401042916b54b7d8f90f0,
+        type: 3}
+      propertyPath: m_text
+      value: "S\u1ED1 c\xE2u \u0111\xFAng"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2901616567885142412, guid: 0f85f05a80b401042916b54b7d8f90f0,
+        type: 3}
+      propertyPath: m_text
+      value: "S\u1ED1 c\xE2u sai"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4039748158549003732, guid: 0f85f05a80b401042916b54b7d8f90f0,
+        type: 3}
+      propertyPath: m_text
+      value: "S\u1ED1 l\u1EA7n m\u1EAFc l\u1ED7i "
+      objectReference: {fileID: 0}
     - target: {fileID: 6211740483208024185, guid: 0f85f05a80b401042916b54b7d8f90f0,
         type: 3}
       propertyPath: m_Name
