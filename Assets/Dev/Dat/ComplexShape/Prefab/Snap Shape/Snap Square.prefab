@@ -53,6 +53,9 @@ MonoBehaviour:
   - shapeList: 04000000
   - shapeList: 0000000003000000
   - shapeList: 0100000002000000
+  draggabbleShapeLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &5250555044146276107
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -72,5 +75,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 168, y: 161.15, z: 1}
+  m_Size: {x: 100, y: 100, z: 1}
   m_Center: {x: 0, y: 0, z: 0}

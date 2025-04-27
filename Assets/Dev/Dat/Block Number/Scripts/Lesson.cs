@@ -34,7 +34,7 @@ namespace BlockNumber
 
             print($"LESSON RESULT: " +
                 $"\nRight Answer: {MathCounting.ResultCtrl.Instance.GetCorrectCount()}" +
-                $"\nRight Answer: {MathCounting.ResultCtrl.Instance.GetWrongCount()}" +
+                $"\nWrong Answer: {MathCounting.ResultCtrl.Instance.GetWrongCount()}" +
                 $"\nMistake Count: {MathCounting.ResultCtrl.Instance.GetMistakeCount()}" +
                 $"\nTotal Time: {GetLessonTime()}");
         }
