@@ -2567,6 +2567,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7990203930324527272, guid: 6fb2bc7a222e59d4eb82bbe83f2472c0,
         type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: cac51fe25018d394ea86949ed9abbd0d,
+        type: 2}
+    - target: {fileID: 7990203930324527272, guid: 6fb2bc7a222e59d4eb82bbe83f2472c0,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 3561526446426085088, guid: cac51fe25018d394ea86949ed9abbd0d,
+        type: 2}
+    - target: {fileID: 7990203930324527272, guid: 6fb2bc7a222e59d4eb82bbe83f2472c0,
+        type: 3}
       propertyPath: m_VerticalAlignment
       value: 512
       objectReference: {fileID: 0}
@@ -2574,6 +2586,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_HorizontalAlignment
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7990203930324527272, guid: 6fb2bc7a222e59d4eb82bbe83f2472c0,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6352,12 +6369,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabList:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 5090900297701121949}
   MistakeCount: 0
-  QuestionCount: 4
+  QuestionCount: 1
 --- !u!1 &1378482951
 GameObject:
   m_ObjectHideFlags: 0
@@ -10483,7 +10497,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &3410490201135809101
@@ -10939,7 +10953,7 @@ MonoBehaviour:
   - {fileID: 7157710679849984993}
   - {fileID: 7427769013865711269}
   - {fileID: 7793257224264984463}
-  CorrectQuestionCustom: 00010100
+  CorrectQuestionCustom: 00010001
   isCheckingAnswer: 0
 --- !u!1 &5169376618283063092
 GameObject:
@@ -11307,7 +11321,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &6283501021381832328
@@ -11442,7 +11456,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!224 &6371943325425504921
@@ -11649,7 +11663,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &7064861611376643251
@@ -11882,7 +11896,7 @@ MonoBehaviour:
   descriptionTMP: {fileID: 1123500829440390604}
   CorrectIcon: {fileID: 3036911409639758540}
   WrongIcon: {fileID: 5311745159140218610}
-  isCorrect: 1
+  isCorrect: 0
   Description: "S\u1ED1 \u0111\u1EA5t \xEDt h\u01A1n s\u1ED1 nh\xE0"
 --- !u!222 &7559620950606329904
 CanvasRenderer:
@@ -11929,7 +11943,7 @@ MonoBehaviour:
   descriptionTMP: {fileID: 8724356495456141185}
   CorrectIcon: {fileID: 5217231814001382665}
   WrongIcon: {fileID: 7317600696241371693}
-  isCorrect: 0
+  isCorrect: 1
   Description: "S\u1ED1 nh\xE0 kh\xE1c s\u1ED1 \u0111\u1EA5t"
 --- !u!224 &7839999797720585383
 RectTransform:
