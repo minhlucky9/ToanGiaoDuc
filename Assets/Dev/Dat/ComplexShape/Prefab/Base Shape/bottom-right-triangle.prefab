@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 1954922608337578592}
   - component: {fileID: 4394081284349370014}
   - component: {fileID: 2474825210362475051}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: bottom-right-triangle
   m_TagString: BaseShape
   m_Icon: {fileID: 0}
@@ -182,7 +182,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 150, y: 150, z: 1}
+  m_Size: {x: 228, y: 228, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2474825210362475051
 MonoBehaviour:
