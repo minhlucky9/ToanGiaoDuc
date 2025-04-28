@@ -6,6 +6,7 @@ namespace ComplexShape
     public class SnapShape : MonoBehaviour
     {
         [SerializeField] List<ShapeCombination> shapeCombinationList;
+        [SerializeField] LayerMask draggabbleShapeLayer;
 
         Lesson lesson;
 
@@ -35,10 +36,8 @@ namespace ComplexShape
 
         void FindShape()
         {
-            if (chosenShapeCombination != null && chosenShapeCombination.IsShapeFullyCombined()) return;
-
             Collider[] colliders = Physics.OverlapBox(boxCollider.bounds.center,
-                boxCollider.bounds.extents, Quaternion.identity);
+                boxCollider.bounds.extents, Quaternion.identity, draggabbleShapeLayer);
 
             foreach (Collider col in colliders)
             {
@@ -49,20 +48,15 @@ namespace ComplexShape
             }
         }
 
-        private void OnTriggerExit(Collider other)
-        {
-            DraggableShape shapeFound = other.GetComponent<DraggableShape>();
-            if (shapeFound != null 
-                && chosenShapeCombination != null 
-                && chosenShapeCombination.IsShapeExist(shapeFound))
-            {
-                chosenShapeCombination.RemoveShape(shapeFound);
-                if(chosenShapeCombination.NoShapeIsFound()) chosenShapeCombination = null;
-            }
-        }
-
         private void HandleSnapShape(DraggableShape shapeFound)
         {
+            if (IsFullyCombined())
+            {
+                lesson.PlusMistake();
+                return;
+            }
+
+            bool canBeCombined = false;
             if (chosenShapeCombination == null)
             {
                 foreach (ShapeCombination shapeCombination in shapeCombinationList)
@@ -79,12 +73,59 @@ namespace ComplexShape
             {
                 chosenShapeCombination.PlaceShape(shapeFound);
                 shapeFound.SnapTo(this);
+                canBeCombined = true;
+            }
+            if (!canBeCombined) lesson.PlusMistake();
+        }
+
+        private void OnTriggerExit(Collider other)
+        {
+            DraggableShape shapeFound = other.GetComponent<DraggableShape>();
+            if (shapeFound != null
+                && chosenShapeCombination != null
+                && chosenShapeCombination.IsShapeExist(shapeFound))
+            {
+                chosenShapeCombination.RemoveShape(shapeFound);
+                if (chosenShapeCombination.NoShapeIsFound()) chosenShapeCombination = null;
             }
         }
+
 
         public Vector2 GetRectPosition()
         {
             return rectTransform.position;
+        }
+
+        public void SelfCorrect()
+        {
+            if (chosenShapeCombination == null)
+            {
+                chosenShapeCombination = shapeCombinationList[Random.Range(0, shapeCombinationList.Count)];
+            }
+            if (chosenShapeCombination.IsFullyCombined()) return;
+
+            int attempt = 10;
+
+            while (!chosenShapeCombination.IsFullyCombined() && attempt > 0)
+            {
+                attempt--;
+                Collider[] cols = Physics.OverlapSphere(transform.position, 10, draggabbleShapeLayer);
+                foreach (Collider col in cols)
+                {
+                    DraggableShape shapeFound = col.GetComponent<DraggableShape>();
+                    if (shapeFound != null && chosenShapeCombination.CanBeCombined(shapeFound))
+                    {
+                        chosenShapeCombination.PlaceShape(shapeFound);
+                        shapeFound.SnapTo(this);
+                    }
+                }
+
+            }
+        }
+
+        public bool IsFullyCombined()
+        {
+            return chosenShapeCombination != null && chosenShapeCombination.IsFullyCombined();
         }
     }
 }

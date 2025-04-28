@@ -19,7 +19,7 @@ namespace ComplexShape
 
         #region Bool Functions
 
-        public bool IsShapeFullyCombined()
+        public bool IsFullyCombined()
         {
             foreach (DraggableShape draggableShape in draggableShapes)
             {
@@ -47,6 +47,8 @@ namespace ComplexShape
         #region Shape Functions
         public bool CanBeCombined(DraggableShape draggableShape)
         {
+            if(draggableShape == null || draggableShape.IsSnapped()) return false;
+
             ShapeType shapeType = draggableShape.GetShapeType();
 
             if (!shapeList.Contains(shapeType)) return false;
@@ -71,7 +73,7 @@ namespace ComplexShape
             if (shapeIndex != -1)
             {
                 draggableShapes[shapeIndex] = null;
-                draggableShape.BackToStartPosition();
+                draggableShape.SnapTo(null);
             }
         }
         #endregion

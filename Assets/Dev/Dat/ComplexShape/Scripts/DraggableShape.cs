@@ -52,13 +52,6 @@ namespace ComplexShape
             }
         }
 
-        public void BackToStartPosition()
-        {
-            currentSnapShape = null;
-            targetPosition = startPosition;
-            SwitchRole();
-        }
-
         public void SetStartPosition(Vector2 startPosition)
         {
             this.startPosition = startPosition;
@@ -71,7 +64,7 @@ namespace ComplexShape
         #region Base & Clone Functions
         private void RespawnBaseShape()
         {
-            GameObject baseShape = Instantiate(gameObject, 
+            GameObject baseShape = Instantiate(gameObject,
                 Vector2.zero, Quaternion.identity, transform.parent);
 
             baseShape.name = gameObject.name;
@@ -82,7 +75,7 @@ namespace ComplexShape
             draggableShape.SetStartPosition(startPosition);
         }
 
-        void SwitchRole()
+        void ChangeToBaseShape()
         {
             GameObject[] baseShapes = GameObject.FindGameObjectsWithTag(BASE_TAG);
             foreach (GameObject baseShape in baseShapes)
@@ -99,20 +92,24 @@ namespace ComplexShape
         #endregion
 
         #region Snap Functions
+        public bool IsSnapped() { return currentSnapShape != null; }
+
         public void SnapTo(SnapShape snapShape)
         {
-            if (currentSnapShape != null) return;
-
-            RespawnBaseShape();
-
             currentSnapShape = snapShape;
-            targetPosition = parentRectTransform.InverseTransformPoint(snapShape.GetRectPosition());
-            rectTransform.localPosition = targetPosition;
+
+            if (IsSnapped())
+            {
+                RespawnBaseShape();
+                targetPosition = parentRectTransform.InverseTransformPoint(snapShape.GetRectPosition());
+                rectTransform.localPosition = targetPosition;
+            }
+
         }
 
         public bool CanBeSnapped()
         {
-            return currentSnapShape == null && !isChosen;
+            return !IsSnapped() && !isChosen;
         }
         #endregion
 
@@ -142,6 +139,12 @@ namespace ComplexShape
         public void OnPointerUp(PointerEventData eventData)
         {
             isChosen = false;
+            if (!IsSnapped())
+            {
+                currentSnapShape = null;
+                targetPosition = startPosition;
+                ChangeToBaseShape();
+            }
         }
         #endregion
     }

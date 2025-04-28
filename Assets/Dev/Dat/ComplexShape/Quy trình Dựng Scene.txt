@@ -1,0 +1,15 @@
+B1: Thiết lập môi trường: Lớp học, Bảng phấn
+
+B2: Tạo Canvas cho bảng (World Space)
+
+B3: Kéo prefab Lesson vào Scene
+
+B4: Tạo UI và kéo hình tổ hợp của bài vào
+	Vào Prefab/Snap Shape và chọn các prefab và 
+		kéo vào khớp hình tổ hợp sao cho phủ đầy hình tổ hợp đó
+
+B5: Kéo các prefab hình người chơi có thể kéo trong Prefab/Base Shape vào 
+
+B6: Tạo một nút "Chữa bài" và chọn event onClick là hàm Correct() của Lesson
+
+B7: Tạo một nút "Hoàn thành" và chọn event onClick là hàm EndLesson() của Lesson
