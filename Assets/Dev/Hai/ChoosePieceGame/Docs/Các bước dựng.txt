@@ -1,0 +1,23 @@
+B1: tạo canvas
+-kéo prefab "BoardCanvas" vào hierarchy
+-điều chỉnh cỡ của BoardCanvas và box collider tương ứng với diện tích kéo thả 
+
+B2: tạo các Base piece (miếng to để ghép vào)
+-kéo prefab "BasePiece" vào trong "BoardCanvas"
+-chỉnh child object "base" của "BasePiece" thành model tương ứng (delete xong kéo model tương ứng vào)
+-chỉnh "Rotation Speed" của component "Piece Inspector" của BasePiece
+
+B3: tạo đáp án trả lời
+-kéo prefab "AnswerOption" vào Board Canvas
+-tick lựa chọn "Is Correct Piece" nếu đáp án đó đúng trong component "Corner Piece" của object con "CornerPiece"
+-chỉnh "Rotation Speed" của component "Piece Inspector" của CornerPiece
+
+B4: tạo game manager
+-tạo empty object
+-đổi tag object manager thành "ChoosePieceManager"
+-gắn script "ChoosePieceManager" vào object manager
+
+B4: điều chỉnh các đối tượng khác
+-thêm tag "BtnComplete" cho nút "Hoàn thành" (hoặc sửa tên tag ở dòng 28 trong script "DragDropManager.cs" thành tên tag hiện tại của button)
+-thêm function OnClick "ChoosePieceManager.CorrectWork" vào nút chữa bài
+-gọi hàm "StartTimer()" của "ChoosePieceManager" khi bắt đầu tính thời gian làm bài (xóa StartTimer() trong script ChoosePieceManager.cs, hàm Start())
