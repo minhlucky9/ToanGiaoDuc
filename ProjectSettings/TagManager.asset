@@ -14,6 +14,11 @@ TagManager:
   - BtnChangePhase
   - QuestionPanel
   - BtnQuestionPanel
+  - TextTimer
+  - BasePiece
+  - BtnAnswer
+  - CornerPiece
+  - ChoosePieceManager
   layers:
   - Default
   - TransparentFX
@@ -22,7 +27,7 @@ TagManager:
   - Water
   - UI
   - Linkables
-  - 
+  - Inspectables
   - 
   - 
   - 
