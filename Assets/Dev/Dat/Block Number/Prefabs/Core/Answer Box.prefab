@@ -219,7 +219,7 @@ PrefabInstance:
     - target: {fileID: 4003701673019406767, guid: 6f74120b35ed0a74aac831b83f099fdd,
         type: 3}
       propertyPath: CorrectAnswer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4130517824623876475, guid: 6f74120b35ed0a74aac831b83f099fdd,
         type: 3}
@@ -230,6 +230,11 @@ PrefabInstance:
         type: 3}
       propertyPath: answer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8184503460973619714, guid: 6f74120b35ed0a74aac831b83f099fdd,
+        type: 3}
+      propertyPath: correctAnswer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8922755398714164530, guid: 6f74120b35ed0a74aac831b83f099fdd,
         type: 3}

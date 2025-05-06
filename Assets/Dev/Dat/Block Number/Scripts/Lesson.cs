@@ -1,14 +1,21 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace BlockNumber
 {
     public class Lesson : MonoBehaviour
     {
         [SerializeField] ModelController modelController;
+        [SerializeField] RawImage modelImage;
 
         bool isLessonPaused;
         float lessonTimer;
+
+        private void Awake()
+        {
+            modelController.SetModelImage(modelImage);
+        }
 
         void Update()
         {

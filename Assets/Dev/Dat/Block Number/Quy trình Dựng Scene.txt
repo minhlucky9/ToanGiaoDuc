@@ -1,20 +1,20 @@
-B1: Thiết lập môi trường: Lớp học, Bảng phấn
+B1: Kéo prefab Lesson (Chalkboard UI) vào Canvas của bảng (World Space)
 
-B2: Tạo Canvas cho bảng (World Space)
+B2: Kéo prefab Result vào World
 
-B3: Kéo prefab Lesson (Chalkboard UI) vào Canvas trên
-
-B4: Thiết lập Điều khiển và Hiển thị Mô hình:
+B3: Thiết lập Điều khiển và Hiển thị Mô hình:
 	- Kéo prefab Model Camera vào World, để xa lớp học
-	- Kéo prefab Mô hình vào trong Model Container trong Model Camera
-	- Tìm Model Image trong Lesson (Chalkboard UI) và kéo vào ModelController của Model Camera
+	- Kéo prefab Mô hình câu hỏi vào trong Model Container trong Model Camera
 
-B5: Kéo ModelController vào Lesson của Lesson (Chalkboard UI)
+B4: Kéo ModelController (của Model Camera) vào Lesson của Lesson (Chalkboard UI)
 
-B6: Thiết lập ô trả lời (Answer Box)
+B5: Thiết lập ô trả lời (Answer Box)
 	- Kéo các prefab Answer Box vào Canvas của bảng (tùy vào mô hình để xác định số lượng Answer Box hợp lý)
 	- Gán ảnh Sprite mô hình cho Model Icon của Answer Box
-	- Ghi Right Answer trong AnswerBox
+	- Ghi Right Answer trong CaculusHolder trong AnswerBox 
 
-B7: Kéo toàn bộ các Answer Box vào Lesson của Lesson (Chalkboard UI)
-B8: Tạo một Button bất kỳ và gán hàm Lesson.EndLesson() vào event OnClick của nút để xem kết quả
+B6: Kéo prefab Type 1 (Input nhập số) từ 'Dev\QuangAnh\MatchCounting\Scripts\MathCtrl\InputTable\Prefabs'
+
+B6: Kéo prefab nút "Chữa bài" vào Canvas (bước này nên thực hiện sau khi đã Setup tất cả AnswerBox)
+
+B6: Tạo một Button bất kỳ và gán hàm Lesson.EndLesson() vào event OnClick của nút để xem kết quả
