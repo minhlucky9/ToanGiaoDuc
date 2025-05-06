@@ -224,6 +224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   modelController: {fileID: 0}
+  modelImage: {fileID: 8624797549130179883}
 --- !u!1 &7733465189603297159
 GameObject:
   m_ObjectHideFlags: 0

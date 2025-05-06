@@ -1,14 +1,15 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace BlockNumber
 {
     public class ModelController : MonoBehaviour
     {
         [SerializeField] float rotationSpeed = 5f;
-        [SerializeField] RectTransform imageRectTransform;
         [SerializeField] Transform modelContainerT;
 
+        RectTransform imageRectTransform;
         Vector3 lastInputPosition;
 
         void Update()
@@ -25,6 +26,12 @@ namespace BlockNumber
                 lastInputPosition = GetCurrentInputPosition();
             }
             else lastInputPosition = GetCurrentInputPosition();
+        }
+
+        public void SetModelImage(RawImage image)
+        {
+            if (image == null) return;
+            imageRectTransform = image.rectTransform;
         }
 
         Vector3 GetCurrentInputPosition()
