@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
-using System.Collections.Generic;
 
 namespace ColorPaint
 {
@@ -9,34 +7,39 @@ namespace ColorPaint
     {
         public static GameManager Instance;
 
-        [Header("Scoreboard UI")]
-        public GameObject scorePanel;
-        public TextMeshProUGUI correctText;
-        public TextMeshProUGUI wrongText;
-        public TextMeshProUGUI mistakeText;
-        public TextMeshProUGUI timeText;
-        public TimerScript timerScript;
-
         [Header("Game Elements")]
-        public Paintable[] paintables;
-        public Image[] targetShapes;
+        [SerializeField] private Paintable[] paintables;
+        [SerializeField] private Image[] targetShapes;
 
-        public int mistakeCount = 0;
+        private int mistakeCount = 0;
+        private float timeElapsed = 0f;
+        private bool isTimerRunning = true;
+
         private const float COLOR_SIMILARITY_THRESHOLD = 0.1f;
 
         private void Awake()
         {
-            if (Instance == null)
-            {
-                Instance = this;
-            }
-            else
-            {
-                Destroy(gameObject);
-                return;
-            }
+            if (Instance == null) Instance = this;
+            else { Destroy(gameObject); return; }
+        }
 
-            scorePanel.SetActive(false);
+        private void Start()
+        {
+            if (paintables == null || paintables.Length == 0)
+                paintables = FindObjectsOfType<Paintable>();
+
+            if (targetShapes == null || targetShapes.Length == 0)
+                targetShapes = FindObjectsOfType<Image>();
+
+            StartTimer();
+        }
+
+        private void Update()
+        {
+            if (isTimerRunning)
+            {
+                timeElapsed += Time.deltaTime;
+            }
         }
 
         public void AddMistake()
@@ -48,7 +51,7 @@ namespace ColorPaint
         {
             if (paintables == null || targetShapes == null)
             {
-                Debug.LogError("Paintables hoặc TargetShapes chưa được gán!");
+                Debug.LogError("❗ Paintables hoặc TargetShapes chưa được gán!");
                 return;
             }
 
@@ -83,16 +86,10 @@ namespace ColorPaint
                 }
             }
 
-            timerScript.StopTimer();
+            StopTimer();
+            string timeResult = GetFormattedTime();
 
-            correctText.text = $"{correctCount}";
-            wrongText.text = $" {wrongCount}";
-            mistakeText.text = $"{mistakeCount}";
-            timeText.text = $" {timerScript.GetFormattedTime()}";
-
-            scorePanel.SetActive(true);
-
-            Debug.Log($"[GameManager] Kết quả: Đúng: {correctCount} - Sai: {wrongCount} - Lỗi: {mistakeCount} - Thời gian: {timerScript.GetFormattedTime()}");
+            Debug.Log($"[GameManager] ✅ Đúng: {correctCount} | ❌ Sai: {wrongCount} | ⚠️ Lỗi: {mistakeCount} | ⏱ Thời gian: {timeResult}");
         }
 
         public void ResetGame()
@@ -107,8 +104,7 @@ namespace ColorPaint
                 }
             }
 
-            scorePanel.SetActive(false);
-            timerScript.StartTimer();
+            StartTimer();
         }
 
         public void AutoCorrect()
@@ -127,7 +123,7 @@ namespace ColorPaint
                 }
             }
 
-            Debug.Log("🛠 Tự động tô đúng màu cho tất cả hình!");
+            Debug.Log("🛠 Đã tự động tô đúng màu cho tất cả hình.");
         }
 
         public Color? GetTargetColor(ShapeType shapeType)
@@ -161,6 +157,25 @@ namespace ColorPaint
             return color.r >= whiteThreshold &&
                    color.g >= whiteThreshold &&
                    color.b >= whiteThreshold;
+        }
+
+        // Timer Logic
+        private void StartTimer()
+        {
+            timeElapsed = 0f;
+            isTimerRunning = true;
+        }
+
+        private void StopTimer()
+        {
+            isTimerRunning = false;
+        }
+
+        private string GetFormattedTime()
+        {
+            int minutes = Mathf.FloorToInt(timeElapsed / 60f);
+            int seconds = Mathf.FloorToInt(timeElapsed % 60f);
+            return string.Format("{0:00}:{1:00}", minutes, seconds);
         }
     }
 }
