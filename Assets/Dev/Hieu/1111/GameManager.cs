@@ -1,26 +1,33 @@
 ﻿using UnityEngine;
-using TMPro;
 
 namespace MathConnection
 {
     public class GameManager : MonoBehaviour
     {
         public static GameManager Instance;
-        public GameObject scorePanel;
-        public TextMeshProUGUI correctText;
-        public TextMeshProUGUI wrongText;
-        public TextMeshProUGUI mistakeText;
-        public TextMeshProUGUI timeText;
-        public TimerScript timerScript;
 
         public int mistakeCount = 0;
+
+        private float timeElapsed = 0f;
+        private bool isTimerRunning = true;
 
         private void Awake()
         {
             if (Instance == null) Instance = this;
             else Destroy(gameObject);
+        }
 
-            scorePanel.SetActive(false);
+        private void Start()
+        {
+            StartTimer();
+        }
+
+        private void Update()
+        {
+            if (isTimerRunning)
+            {
+                timeElapsed += Time.deltaTime;
+            }
         }
 
         public void AddMistake()
@@ -47,16 +54,14 @@ namespace MathConnection
                     wrongCount++;
             }
 
-            timerScript.StopTimer();
+            StopTimer();
 
-            correctText.text = $" {correctCount}";
-            wrongText.text = $" {wrongCount}";
-            mistakeText.text = $" {mistakeCount}";
-            timeText.text = $" {timerScript.GetFormattedTime()}";
+            Debug.Log($"[GameManager] Kết quả:");
+            Debug.Log($"- Đúng: {correctCount}");
+            Debug.Log($"- Sai: {wrongCount}");
+            Debug.Log($"- Lỗi: {mistakeCount}");
+            Debug.Log($"- Thời gian: {GetFormattedTime()}");
 
-            Debug.Log($"[GameManager] Kết quả: Đúng: {correctCount} - Sai: {wrongCount} - Lỗi: {mistakeCount} - Thời gian: {timerScript.GetFormattedTime()}");
-
-            scorePanel.SetActive(true);
             ClearAllLines();
         }
 
@@ -67,12 +72,14 @@ namespace MathConnection
             {
                 draggable.ClearLineRenderer();
             }
-         
         }
 
         public void ResetGame()
         {
             mistakeCount = 0;
+            timeElapsed = 0f;
+            StartTimer();
+
             var draggables = FindObjectsOfType<DraggableObject>();
             foreach (var draggable in draggables)
             {
@@ -82,8 +89,6 @@ namespace MathConnection
             }
 
             Debug.Log("[GameManager] Đã reset trò chơi.");
-
-            scorePanel.SetActive(false);
         }
 
         public void AutoCorrectConnections()
@@ -122,6 +127,25 @@ namespace MathConnection
                     Debug.LogWarning($"[GameManager] Không tìm thấy số đúng cho {draggable.name}");
                 }
             }
+        }
+
+        // Timer Methods
+        private void StopTimer()
+        {
+            isTimerRunning = false;
+        }
+
+        private void StartTimer()
+        {
+            timeElapsed = 0f;
+            isTimerRunning = true;
+        }
+
+        private string GetFormattedTime()
+        {
+            int minutes = Mathf.FloorToInt(timeElapsed / 60f);
+            int seconds = Mathf.FloorToInt(timeElapsed % 60f);
+            return string.Format("{0:00}:{1:00}", minutes, seconds);
         }
     }
 }
