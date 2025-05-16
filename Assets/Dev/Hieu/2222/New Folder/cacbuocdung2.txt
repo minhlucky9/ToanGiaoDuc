@@ -1,14 +1,12 @@
 Bước 1: Thiết lập môi trường không gian lớp học, không gian xung quanh
 
 Bước 2: Kéo prefab vào và thiết lập background cùng các asset_group
+ - Kéo Asset_Group prefab (chứa các shape để tô màu) vào scene.
+		Đặt ở vị trí dễ nhìn.
+		Căn chỉnh tỷ lệ nếu cần.
 
 Bước 3: Trong Inspector của các asset, điền các trường như 
  - gắn script shape identifier và chọn hình dáng của asset như tròn vuông tam giác chữ nhật
  - gắn script paintable
 
-Bước 4: Trong Inspector của các bangketqua, điền các trường như
- - scoreboardUI
- - game elenments bao gồm
-	.paintables kéo các assets vào
-	.target shapes kéo các hình trong panel mẫu vào
 
